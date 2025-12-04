@@ -1,0 +1,21 @@
+Ontdek en maak gebruik van de beste tips voor het gebruik van ChatGPT
+Welkom bij ChatIdeaPrompt, een gratis browserextensie
+💻 Met de volgende functies:
+💡 Sneltoetsen voor ChatGPT-prompts
+💡 Geoptimaliseerde prompts
+💡 Ctrl+↑ om de vorige prompt opnieuw in te voeren
+💡 Midjourney promptgeneratie
+💡 Documentvertaling
+💡 Automatische promptgestuurde taken
+💡 Automatisch doorgaan met klikken
+💡 Ondersteuning voor het exporteren van prompttaken naar txt- en pdf-indeling
+❓ Veelgestelde vragen
+📌 Verzamelen jullie mijn privacygegevens?
+Behalve het opslaan van uw Google-accountgegevens, worden al uw andere gegevens lokaal opgeslagen op uw apparaat. Als u de extensie verwijdert, gaan de gegevens verloren en kunnen ze niet worden hersteld, omdat ze alleen worden opgeslagen in het lokale geheugen van uw apparaat.
+📌 Ik heb een bug gevonden!
+Onze excuses dat u een bug bent tegengekomen. Als u contact met ons kunt opnemen via 💌 chatideaprompt@gmail.com, zullen we het probleem zo snel mogelijk oplossen.
+📌 Ik heb een idee voor een functie!
+We zijn altijd op zoek naar manieren om onze extensie te verbeteren en staan open voor uw ideeën. U kunt uw ideeën met ons delen via 💌 chatideaprompt@gmail.com.
+
+📪 Neem contact met ons op:
+Heeft u vragen of suggesties? Neem dan contact met ons op via 💌 chatideaprompt@gmail.com.

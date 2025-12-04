@@ -1,0 +1,247 @@
+{  "language": {
+  "message": "泰米尔语"
+},"code": {
+  "message": "c"
+},"appName": {
+"message": "ChatIdeaPrompt-தமிழ்"
+},
+"appDesc": {
+"message": "ChatGPT சிறந்த கௌவ்புகளைக் கண்டுபிடிக்குக"
+},
+"copy": {
+"message": "நகலெடு"
+},
+"edit": {
+"message": "திருத்து"
+},
+"options_Languagelab": {
+"message": "மொழி:"
+},
+"menu_prompt": {
+"message": "குறிப்பிட்டமைப்பு மேம்பாடு"
+},
+"menu_Midjourney": {
+"message": "மிட்ஜர்னி குறிப்பு"
+},
+"PromptFast": {
+"message": "விரைவு குறிப்பு"
+},
+"menu_file": {
+"message": "ஆவணம்"
+},
+"menu_task": {
+"message": "குறிப்பிட்ட பணி"
+},
+"menu_translation": {
+"message": "ஆவணம் மொழிபெயர்ப்பு"
+},
+"menu_seting": {
+"message": "அமைப்பு"
+},
+"hint_sendmsg": {
+"message": "குறிப்புகளை மேம்படுத்த அனுப்புங்கள்"
+},
+"placeholder_sendmsg": {
+"message": "உங்கள் கேள்வியை உள்ளிடவும்"
+},
+"title_gogpt": {
+"message": "தேர்ந்தெடுத்த கேள்விகளை chatgpt-க்கு செல்லு"
+},
+"title_gogptone": {
+"message": "chatgpt-க்கு செல்லு"
+},
+"prompt_Optimization": {
+"message": "நீங்கள் இப்போது PromptEngineering என்ற ஒரு கட்டாய பணியாளர் கோவிட் அறிவியல் என்பதால், உங்கள் பதில் பின்னர் பின்வருமாறு தேவைப்படுகின்றது:\n[1] = நான் உங்களுக்கு வழங்கும் உள்ளடக்கம்\n[2] = ஒரு [பொழுதுபோக்காளர்] ஆக ஆரம்பிக்கும், பாதுகாப்பான பங்கேற்கையை வழங்குகின்றது\n[3] = [1] இல் திட்டமிட்ட நிலையான இலக்கம், முதல் வருவாய் கேள்வி முறையில் செய்வதாக விளக்கப்படுகின்றது\n[4] = [1] இல் காடல்,\n[5] = [2] [3] [4]\nகுறிக்கோள்:\n[1] பொதுவான செய்தி அல்ல\nஉங்கள் பதிலில் [5] உருவாக்குகின்றது. உபயோகப்படுத்தவேண்டிய பொருத்தம் அல்லது பயனருக்குத் தேவையற்றது கொடுப்பதே இல்லை\nஉங்கள் பதில் தமிழாக இருக்க வேண்டும்"
+},
+"painting_sendmsg": {
+"message": "தகவலை அனுப்புவதன் மூலம் குறிப்புகளை உருவாக்கலாம்"
+},
+"fast_msg": {
+  "message": "நீங்கள் உள்ளீடு பெட்டியில் உள்ள உள்ளடக்கத்தை {input} ஆக மாற்றப்படும். [மாறிலி பெயர்] உங்களால் அமைக்கப்பட்டுள்ள உள்ளீட்டு மாறியமாகக் காணலாம். <a href='https://dudube.com/prompts?lang=ta' target='_blank'>பிராம்பனத்தைப் பெறுங்கள்</a>"
+  },
+"placeholder_painting_sendmsg": {
+"message": "முக்கிய சொல்லை உள்ளிடவும்"
+},
+"fast_title": {
+"message": "குறிப்பு பட்டியல்"
+},
+"btn_add": {
+"message": "சேர்க்க"
+},
+"btn_check": {
+"message": "முடிவு பார்க்க"
+},
+"btn_import": {
+"message": "இறக்குமதி"
+},
+"import_msg": {
+"message": "ஒரு புத்தகம் ஒரு Prompt பதிவு"
+},
+"btn_aiedit": {
+"message": "ஏதேனும் மாற்று"
+},
+"btn_back": {
+"message": "திரும்பவும்"
+},
+"err_upfile": {
+"message": "மடக்கப்படுகின்றது: txt ஆவணங்கள் மட்டுமே ஆதரிக்கப்படுகின்றன, ஒரு Prompt முழு வரிசை ஒருமுறை மட்டுமே இருக்கலாம்"
+},
+"import_msg_tran": {
+"message": "txt மற்றும் எழுத்துரு PDF ஆகியவற்றைத் தமிழில் ஆதரிக்கும்"
+},
+"translate_msg": {
+"message": "மொழிபெயர்க்க"
+},
+"translate_lang_En": {
+"message": "ஆங்கிலம்"
+},
+"translate_lang_cntw": {
+"message": "சீனம் (பாரம்பரிய)"
+},
+"translate_lang_cnzh": {
+"message": "சீனம் (எளிய முறை)"
+},
+"translate_lang_Spanish": {
+"message": "எஸ்பானியம்"
+},"translate_lang_French": {
+"message": "பிரான்சு"
+},
+"translate_lang_Arabic": {
+"message": "அரபிக்"
+},
+"translate_lang_Russian": {
+"message": "ரஷியன்"
+},
+"translate_lang_Hindi": {
+"message": "இந்தி"
+},
+"translate_lang_Portuguese": {
+"message": "போர்ச்சுகீஸ்"
+},
+"translate_lang_Bengali": {
+"message": "பெங்காலி"
+},
+"translate_lang_Japanese": {
+"message": "ஜப்பானிய"
+},
+"translate_lang_German": {
+"message": "ஜெர்மன்"
+},
+"translate_lang_Korean": {
+"message": "கொரியன்"
+},
+"translate_lang_Tamil": {
+"message": "தமிழ்"
+},
+"translate_lang_Italian": {
+"message": "இத்தாலிய"
+},
+"translate_lang_Turkish": {
+"message": "துருக்கிய"
+},
+"translate_lang_Dutch": {
+"message": "டச்சு"
+},
+"btn_backpage": {
+"message": "மீண்டும் திரும்பு"
+},
+"btn_export": {
+"message": "ஏற்றுமதி"
+},
+"btn_gohh": {
+"message": "உரையாடலைப் பார்க்க"
+},
+"btn_hideprompt": {
+"message": "கைவிடு உரையாடலை"
+},
+"btn_autogot": {
+"message": "தானாக தொடர"
+},
+"btn_aiprompt": {
+"message": "ஏஐ உரையாடல்"
+},
+"openai_placeholder": {
+"message": "Ctrl+↑ மீண்டும் முந்தைய உரையாடலை உள்ளிடலாம்"
+},
+"btn_Fast": {
+"message": "வேகமான"
+},
+"btn_allsend": {
+"message": "அனைத்தும் அனுப்பு"
+},
+"btn_olsend": {
+"message": "அனுப்புக்கானது மட்டும்"
+},
+"contextMenus_savePrompt": {
+"message": "உரையாடலை சேமிக்க"
+},
+"contextMenus_gochatgpt": {
+"message": "உரையாடலை சென்று ChatGPT கேள்வி கேட்க"
+},
+"title_Fast": {
+"message": "உரையாடலை உருவாக்கு"
+},
+"btn_save": {
+"message": "சேமி"
+},
+"btn_reset": {
+"message": "புதுப்பி தொடர்பு"
+},
+"title_add": {
+"message": "புதிய ஆவணத்தை உருவாக்கு"
+},
+"title_type": {
+"message": "வகை"
+},
+"title_name": {
+"message": "பெயர்"
+},
+"placeholder_name": {
+"message": "ஆவணத்தின் பெயரை உள்ளிடவும்"
+},
+"btn_create": {
+"message": "உருவாக்கு"
+},
+"title_languagemodel": {
+"message": "மொழி மாதிரி"
+},
+"title_APIkeys": {
+"message": "API விசைகள்"
+},
+"placeholder_APIkeys": {
+"message": "OpenAI API விசையை உள்ளிடவும்"
+},
+"title_APIkeystext": {
+"message": "உங்கள் OpenAI API விசையை உள்ளிடவும். <a href='https://platform.openai.com/account/api-keys' target='_blank'>பெறுக</a> [இந்த தரவு உலாவியில் மட்டுமே சேமிக்கப்படும்]"
+},
+"menu_loginout": {
+"message": "வெளியேறு"
+},
+"menu_login": {
+"message": "உள்நுழை"
+},
+"menu_tutorial": {
+"message": "பயன்பாட்டு கற்றுக்கொள்ளுங்கள்"
+},
+"menu_pay": {
+"message": "ஆம்களைக்கேட்கு"
+},
+"menu_invite": {
+"message": "ஆம்களைக்கேட்கு"
+},
+"btn_zdypompt": {
+"message": "பயன்பாட்டு உரையாடலை இயக்கு"
+},
+"placeholder_promptcon": {
+"message": "தனிப்பட்ட உரையாடலை உள்ளிடவும்"
+},
+"errmsgup": {
+"message": "மேம்படுத்தி பணி முடிந்ததும் அனைத்து அம்சங்களை விட்டுவிட்டது."
+},
+"errmsgapikey": {
+"message": "OpenAI விசையை சரிபார்க்கவும் சரியாக அமைக்கப்பட்டுள்ளதுக்கு உறுதிப்படுத்தவும்"
+},
+"menu_export": {
+"message": "அரபு உரையிடல்"
+}
+}

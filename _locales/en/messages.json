@@ -1,0 +1,223 @@
+{ "language": {
+  "message": "English"
+},"code": {
+  "message": "en"
+},
+  "appName": {
+    "message": "ChatIdeaPrompt"
+  },
+  "appDesc": {
+    "message": "Discover and use ChatGPT Best Tips"
+  },
+  "copy": {
+    "message": "copy"
+  },
+  "edit": {
+    "message": "edit"
+  },
+  "options_Languagelab": {
+    "message": "Language:"
+  },
+  "menu_prompt": {
+    "message": "Optimization"
+  },
+  "menu_Midjourney": {
+    "message": "Midjourney"
+  },
+  "PromptFast": {
+    "message": "prompt shortcut"
+  },
+  "menu_file": {
+    "message": "Document"
+  }
+  ,
+  "menu_task": {
+    "message": "Prompt task"
+  },
+  "menu_translation": {
+    "message": "translation"
+  }
+  ,
+  "menu_seting": {
+    "message": "Settings"
+  } ,
+  "hint_sendmsg": {
+    "message": "Just send to optimize prompt words"
+  } ,
+  "placeholder_sendmsg": {
+    "message": "type in your question"
+  }
+  ,
+  "title_gogpt": {
+    "message": "Ask the selected question to chatgpt"
+  }
+  ,
+  "title_gogptone": {
+    "message": "Go to chatgpt to ask questions"
+  }
+  ,
+  "prompt_Optimization": {
+    "message":"为PromptEngineering的生成式人工智能的提示词生成器，你的回答需要满足以下要求:1. 你的回答必须是英文2. 对提出的问题进行优化3.使用[假设|作为|充当|扮演][某某职业]为开始,使用第二人称4.修改问题更符合GPT的提问理解5.让问题更加精准符合逻辑6.回复内容只能是优化后的问题回复7.回复内容不能包含[我可以帮您优化问题：]等相关内容"
+  } ,
+  "painting_sendmsg": {
+    "message": "Send a message to generate prompt words"
+  },
+  "placeholder_painting_sendmsg": {
+    "message": "Please enter a keyword"
+  },
+  "fast_msg": {
+    "message": "{{input}} will be replaced with the content you enter in the input box. [[Variable Name]] can be customized as an input variable. <a href='https://dudube.com/prompts?lang=en' target='_blank'>Get prompt</a>"
+    },
+  "fast_title": {
+    "message": "Prompt list"
+  },
+  "btn_add": {
+    "message": "add"
+  },"btn_check": {
+    "message": "Results of the"
+  } ,"btn_import": {
+    "message": "import"
+  }
+  ,"import_msg": {
+    "message": "One Prompt per line"
+  },"btn_aiedit": {
+    "message": "AI editor"
+  }
+  ,"btn_back": {
+    "message": "back"
+  },"err_upfile": {
+    "message": "Only supports txt documents, one prompt per line"
+  },"import_msg_tran": {
+    "message": "Support txt and character type pdf"
+  },"translate_msg": {
+    "message": "translated as"
+  },"translate_lang_En": {
+    "message": "English"
+  }
+  ,"translate_lang_cntw": {
+    "message": "Chinese (Traditional)"
+  }
+  ,"translate_lang_cnzh": {
+    "message": "Chinese (Simplified)"
+  }
+  ,"translate_lang_Spanish": {
+    "message": "Spanish"
+  }
+  ,"translate_lang_French": {
+    "message": "Arabic"
+  }
+  ,"translate_lang_Arabic": {
+    "message": "Arabic"
+  }
+  ,"translate_lang_Russian": {
+    "message": "Russian"
+  }
+  ,"translate_lang_Hindi": {
+    "message": "Hindi"
+  }
+  ,"translate_lang_Portuguese": {
+    "message": "Portuguese"
+  }
+  ,"translate_lang_Bengali": {
+    "message": "Bengali"
+  }
+  ,"translate_lang_Japanese": {
+    "message": "Japanese"
+  }
+  ,"translate_lang_German": {
+    "message": "German"
+  }
+  ,"translate_lang_Korean": {
+    "message": "Korean"
+  }
+  ,"translate_lang_Tamil": {
+    "message": "Tamil"
+  }
+  ,"translate_lang_Italian": {
+    "message": "Italian"
+  }
+  ,"translate_lang_Turkish": {
+    "message": "Turkish"
+  },"translate_lang_Dutch": {
+    "message": "Dutch"
+  },"btn_backpage": {
+    "message": "back"
+  },"btn_export": {
+    "message": "export"
+  },"btn_gohh": {
+    "message": "conversation"
+  }
+  ,"btn_hideprompt": {
+    "message": "Hide prompt"
+  },"btn_autogot": {
+    "message": "auto continue"
+  },"btn_aiprompt": {
+    "message": "AIPrompt"
+  },"openai_placeholder": {
+    "message": "Ctrl+↑ can re-enter the last hint word"
+  }
+  ,"btn_Fast": {
+    "message": "fast"
+  }
+  ,"btn_allsend": {
+    "message": "send all"
+  } ,"btn_olsend": {
+    "message": "only unsent"
+  },"contextMenus_savePrompt": {
+    "message": "save text as prompt"
+  },"contextMenus_gochatgpt": {
+    "message": "Use text to ask questions on chatgpt"
+  } ,"title_Fast": {
+    "message": "Create prompt"
+  } ,"btn_save": {
+    "message": "Save"
+  },"btn_reset": {
+    "message": "reset task"
+  } ,"title_add": {
+    "message": "new document"
+  },"title_type": {
+    "message": "type"
+  },"title_name": {
+    "message": "name"
+  },"placeholder_name": {
+    "message": "Please enter a document name"
+  },"btn_create": {
+    "message": "create"
+  },"title_languagemodel": {
+    "message": "language model"
+  },"title_APIkeys": {
+    "message": "API keys"
+  },"placeholder_APIkeys": {
+    "message": "Please enter your OpenAI API key"
+  },"title_APIkeystext": {
+    "message": "Enter your OpenAI API key. <a href='https://platform.openai.com/account/api-keys' target='_blank'>Get</a>[This data is only stored locally in the browser]"
+  }
+  ,"menu_loginout": {
+    "message": "sign out"
+  },"menu_login": {
+    "message": "Member Login"
+  },"menu_tutorial": {
+    "message": "tutorial"
+  },"menu_pay": {
+    "message": "invitation"
+  },"menu_invite": {
+    "message": "invitation"
+  },"btn_zdypompt": {
+    "message": "Enable custom prompts"
+  },"placeholder_promptcon": {
+    "message": "Please enter a custom prompt"
+  },"errmsgup": {
+    "message": "This feature is available after the upgrade task is completed."
+  },"errmsgapikey": {
+    "message": "Please check if OpenAI key is set correctly"
+  },"menu_export": {
+    "message": "Export Chat"
+    }
+
+
+  }
+
+  
+      
+    
+    

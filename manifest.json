@@ -1,0 +1,79 @@
+
+{
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "version":"1.1.7",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__", 
+   "background": {
+      "service_worker": "background.js"
+    },
+  "icons":{"16":"images/16.png","48":"images/48.png","128":"images/128.png"},
+   "action": {
+      "default_title":"__MSG_appName__"
+   },
+
+   "options_page": "html/options.html",
+   "content_scripts": [
+      {
+         "js": [
+          "js/historygpt.js","js/insertmsg.js"
+        ],
+        "css": ["css/styles.css"],
+        "matches": [
+          "https://chatgpt.com/*"
+        ],
+        "run_at": "document_idle",
+        "all_frames": true
+      },{
+        "js": [
+          "js/function.js","js/content.js"
+        ],
+        "css": ["css/styles.css"],
+        "matches": [
+          "https://*.doubao.com/*","https://*.deepseek.com/*","https://gemini.google.com/*","https://copilot.microsoft.com/*","https://www.qianwen.com/*","https://grok.com/*"
+        ],
+        "run_at": "document_idle",
+        "all_frames": true
+      },
+      {
+        "js": [
+          "js/function_claude.js","js/content.js"
+        ],
+        "css": ["css/styles.css"],
+        "matches": [
+          "https://claude.ai/*"
+        ],
+        "run_at": "document_idle",
+        "all_frames": true
+      },
+      {
+        "js": [
+          "js/allcon.js"
+        ],
+        "css": ["css/allcss.css"],
+        "matches": [
+          "<all_urls>"
+        ],
+        "run_at": "document_idle",
+        "all_frames": true
+      }
+    ],
+    "web_accessible_resources" : [{
+      "resources": ["_locales/*"],
+      "matches": ["https://*/*"]
+    }],
+   "permissions": [
+    "tabs",
+    "contextMenus",
+    "storage",
+    "activeTab",
+      "clipboardWrite"
+   ],
+    "host_permissions": [
+    "https://wwww.dudube.com/*"
+  ],
+    "homepage_url": "https://dudube.com",
+   "key":""
+  
+}

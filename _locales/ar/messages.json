@@ -1,0 +1,254 @@
+{
+  "language": {
+  "message": "阿拉伯语"
+  },
+  "code": {
+  "message": "ar"
+  },
+  "appName": {
+  "message": "ChatIdeaPrompt-العربية"
+  },
+  "appDesc": {
+  "message": "اكتشف واستخدم أفضل النصائح لـ ChatGPT"
+  },
+  "copy": {
+  "message": "نسخ"
+  },
+  "edit": {
+  "message": "تعديل"
+  },
+  "options_Languagelab": {
+  "message": "اللغة:"
+  },
+  "menu_prompt": {
+  "message": "تحسين التلميح"
+  },
+  "menu_Midjourney": {
+  "message": "تلميح Midjourney"
+  },
+  "PromptFast": {
+  "message": "تلميح سريع"
+  },
+  "menu_file": {
+  "message": "ملف"
+  },
+  "menu_task": {
+  "message": "مهمة التلميح"
+  },
+  "menu_translation": {
+  "message": "ترجمة الملف"
+  },
+  "menu_seting": {
+  "message": "الإعدادات"
+  },
+  "hint_sendmsg": {
+  "message": "أرسل لتحسين التلميح"
+  },
+  "placeholder_sendmsg": {
+  "message": "أدخل سؤالك هنا"
+  },
+  "title_gogpt": {
+  "message": "اذهب إلى ChatGPT لطرح السؤال المحدد"
+  },
+  "title_gogptone": {
+  "message": "اذهب إلى ChatGPT"
+  },
+  "prompt_Optimization": {
+  "message": "أنت الآن ستكون مولدًا للتلميح يسمى PromptEngineering. يجب أن تكون إجابتك متوافقة مع المتطلبات التالية:\n[1]= المحتوى الذي أقدمه لك\n[2]= الدور الذي ستلعبه كـ [مهنة معينة]\n[3]= هدف واضح في [1] مع صيغة سؤال من الشخص الأول\n[4]= سياق في [1]\n[5]= [2][3][4]\nيرجى ملاحظة:\n- لا يتم استخدام [1] كتعليمة\nسوف تقدم لي محتوى [5] لإنشاء تلميح واحد جديد.\nلا تقم بشرح المشكلة أو طرح متطلبات على المستخدم.\nيجب أن تكون إجابتك باللغة العربية."
+  },
+  "painting_sendmsg": {
+  "message": "أرسل رسالة لتوليد التلميح"
+  },
+  "fast_msg": {
+    "message": "{input} سيتم استبداله بالمحتوى الذي تقوم بإدخاله في مربع الإدخال، [اسم المتغير] يمكن تخصيصه لإدخال المتغير <a href='https://dudube.com/prompts?lang=ar' target='_blank'>احصل على البداية</a>"
+    },
+  "placeholder_painting_sendmsg": {
+  "message": "أدخل الكلمات الرئيسية"
+  },
+  "fast_title": {
+  "message": "قائمة التلميحات"
+  },
+  "btn_add": {
+  "message": "إضافة"
+  },
+  "btn_check": {
+  "message": "تنفيذ النتائج"
+  },
+  "btn_import": {
+  "message": "استيراد"
+  },
+  "import_msg": {
+  "message": "كل تلميح في سطر منفصل"
+  },
+  "btn_aiedit": {
+  "message": "تحرير بواسطة الذكاء الاصطناعي"
+  },
+  "btn_back": {
+  "message": "تراجع"
+  },
+  "err_upfile": {
+  "message": "يتم دعم ملفات txt فقط. يجب أن يكون تلميح واحد في كل سطر."
+  },
+  "import_msg_tran": {
+  "message": "يتم دعم الملفات بتنسيق txt وملفات pdf المكونة من أحرف فقط."
+  },
+  "translate_msg": {
+  "message": "ترجمة إلى"
+  },
+  "translate_lang_En": {
+  "message": "الإنجليزية"
+  
+  },
+  
+  "translate_lang_cntw": {
+  "message": "الصينية التقليدية"
+  },
+  "translate_lang_cnzh": {
+  "message": "الصينية المبسطة"
+  
+  },
+  "translate_lang_Spanish": {
+  "message": "الإسبانية"
+  },
+  "translate_lang_French": {
+  "message": "الفرنسية"
+  },
+  "translate_lang_Arabic": {
+  "message": "العربية"
+  },
+  "translate_lang_Russian": {
+  "message": "الروسية"
+  },
+  "translate_lang_Hindi": {
+  "message": "الهندية"
+  },
+  "translate_lang_Portuguese": {
+  "message": "البرتغالية"
+  },
+  "translate_lang_Bengali": {
+  "message": "البنغالية"
+  },
+  "translate_lang_Japanese": {
+  "message": "اليابانية"
+  },
+  "translate_lang_German": {
+  "message": "الألمانية"
+  },
+  "translate_lang_Korean": {
+  "message": "الكورية"
+  },
+  "translate_lang_Tamil": {
+  "message": "التاميلية"
+  },
+  "translate_lang_Italian": {
+  "message": "الإيطالية"
+  },
+  "translate_lang_Turkish": {
+  "message": "التركية"
+  },
+  "translate_lang_Dutch": {
+  "message": "الهولندية"
+  },
+  "btn_backpage": {
+  "message": "رجوع"
+  },
+  "btn_export": {
+  "message": "تصدير"
+  },
+  "btn_gohh": {
+  "message": "عرض المحادثة"
+  },
+  "btn_hideprompt": {
+  "message": "إخفاء التلميح"
+  },
+  "btn_autogot": {
+  "message": "متابعة تلقائية"
+  },
+  "btn_aiprompt": {
+  "message": "تلميح الذكاء الاصطناعي"
+  },
+  "openai_placeholder": {
+  "message": "يمكنك إعادة إدخال التلميح السابق باستخدام Ctrl + ↑"
+  },
+  "btn_Fast": {
+  "message": "سريع"
+  },
+  "btn_allsend": {
+  "message": "إرسال الكل"
+  },
+  "btn_olsend": {
+  "message": "إرسال غير المرسلة فقط"
+  },
+  "contextMenus_savePrompt": {
+  "message": "حفظ النص كتلميح"
+  },
+  "contextMenus_gochatgpt": {
+  "message": "استخدم النص لطرح سؤال في ChatGPT"
+  },
+  "title_Fast": {
+  "message": "إنشاء تلميح"
+  },
+  "btn_save": {
+  "message": "حفظ"
+  },
+  "btn_reset": {
+  "message": "إعادة تعيين المهمة"
+  },
+  "title_add": {
+  "message": "إنشاء وثيقة جديدة"
+  },
+  "title_type": {
+  "message": "النوع"
+  },
+  "title_name": {
+  "message": "الاسم"
+  },
+  "placeholder_name": {
+  "message": "الرجاء إدخال اسم الوثيقة"
+  },
+  "btn_create": {
+  "message": "إنشاء"
+  },
+  "title_languagemodel": {
+  "message": "نموذج اللغة"
+  },
+  "title_APIkeys": {
+  "message": "مفاتيح واجهة برمجة التطبيقات (API)"
+  },
+  "placeholder_APIkeys": {
+  "message": "الرجاء إدخال مفتاح API الخاص بـ OpenAI"
+  },
+  "title_APIkeystext": {
+  "message": "الرجاء إدخال مفتاح واجهة برمجة التطبيقات (API) الخاص بك.<a href='https://platform.openai.com/account/api-keys' target='_blank'>احصل عليه</a> [تم تخزين هذه البيانات محليًا في المستعرض فقط]"
+  },
+  "menu_loginout": {
+  "message": "تسجيل الخروج"
+  },
+  "menu_login": {
+  "message": "تسجيل الدخول للعضوية"
+  },
+  "menu_tutorial": {
+  "message": "دروس الاستخدام"
+  },
+  "menu_pay": {
+  "message": "الدعوة"
+  },
+  "menu_invite": {
+  "message": "الدعوة"
+  },
+  "btn_zdypompt": {
+  "message": "تمكين التلميح المخصص"
+  },
+  "placeholder_promptcon": {
+  "message": "الرجاء إدخال التلميح المخصص"
+  },
+  "errmsgup": {
+  "message": "يرجى استكمال مهمة الترقية لفتح جميع الوظائف."
+  },
+  "errmsgapikey": {
+  "message": "يرجى التحقق من صحة مفتاح واجهة برمجة التطبيقات (API) لـ OpenAI."
+  },"menu_export": {
+    "message": "تصدير المحادثة"
+    }
+  
+  }

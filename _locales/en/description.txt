@@ -1,0 +1,21 @@
+Discovering and using the best tips for ChatGPT
+Welcome to ChatIdeaPrompt, a free browser extension.
+💻 It features the following:
+💡 ChatGPT prompts for quick suggestions
+💡 Optimized prompts
+💡 Ctrl+↑ to re-enter the previous prompt
+💡 Midjourney prompt generation
+💡 Document translation
+💡 Automated prompt-based tasks
+💡 Automatic "Continue" button clicking
+💡 Exporting prompt task results in txt and pdf formats
+❓ Frequently Asked Questions
+📌 Is my privacy being collected?
+Apart from storing your Google account login information, all your other data is stored locally on your device. Deleting the extension will result in data loss, as it is only stored in your device's local storage.
+📌 I found a bug!
+We apologize for the inconvenience you encountered. If you could contact us at 💌 chatideaprompt@gmail.com, we will resolve the issue as soon as possible.
+📌 I have a feature idea!
+We are always looking for ways to improve our extension and would be delighted to hear your thoughts. You can share your ideas with us at 💌 chatideaprompt@gmail.com.
+
+📪 Contact us:
+Do you have any questions or suggestions? Please contact us at 💌 chatideaprompt@gmail.com.

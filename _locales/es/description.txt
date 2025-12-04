@@ -1,0 +1,21 @@
+Descubre y utiliza los mejores consejos para ChatGPT.
+Bienvenido/a a ChatIdeaPrompt, una extensión de navegador gratuita.
+💻 Con las siguientes funcionalidades:
+💡 Sugerencias rápidas de ChatGPT
+💡 Optimización de las sugerencias
+💡 Ctrl+↑ para volver a introducir la sugerencia anterior
+💡 Generación de sugerencias de Midjourney
+💡 Traducción de documentos
+💡 Tareas automáticas de preguntas para las sugerencias
+💡 Clic automático en "Continuar"
+💡 Exportación de resultados de tareas de sugerencias en formato TXT y PDF
+❓ Preguntas frecuentes y respuestas
+📌 ¿Se recopilan mis datos de privacidad?
+Excepto por la información de inicio de sesión de tu cuenta de Google, todos tus otros datos se almacenan localmente en tu dispositivo. Si eliminas la extensión, se perderán los datos y no se podrán recuperar, ya que se almacenan únicamente en la memoria local de tu dispositivo.
+📌 ¡Encontré un error!
+Lamentamos escuchar que encontraste un error. Si puedes ponerte en contacto con nosotros a través de 💌 chatideaprompt@gmail.com, resolveremos el problema lo antes posible.
+📌 ¡Tengo una idea de función!
+Siempre estamos buscando formas de mejorar nuestra extensión y estamos encantados de escuchar tus ideas. Comparte tus pensamientos con nosotros en 💌 chatideaprompt@gmail.com.
+
+📪 Contáctanos:
+¿Tienes alguna pregunta o sugerencia? Por favor, ponte en contacto con nosotros en 💌 chatideaprompt@gmail.com.

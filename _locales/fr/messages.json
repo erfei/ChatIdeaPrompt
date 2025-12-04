@@ -1,0 +1,248 @@
+{
+	"language": {
+    "message": "法语"
+  },"code": {
+    "message": "fr"
+  },"appName": {
+"message": "ChatIdeaPrompt-Français"
+},
+"appDesc": {
+"message": "Découvrez et utilisez les meilleures astuces pour ChatGPT"
+},
+"copy": {
+"message": "Copier"
+},
+"edit": {
+"message": "Modifier"
+},
+"options_Languagelab": {
+"message": "Langue :"
+},
+"menu_prompt": {
+"message": "Optimisation des suggestions"
+},
+"menu_Midjourney": {
+"message": "Suggestions Midjourney"
+},
+"PromptFast": {
+"message": "Suggestions rapides"
+},
+"menu_file": {
+"message": "Fichier"
+},
+"menu_task": {
+"message": "Tâche de suggestion"
+},
+"menu_translation": {
+"message": "Traduction de fichiers"
+},
+"menu_seting": {
+"message": "Paramètres"
+},
+"hint_sendmsg": {
+"message": "Envoyez pour optimiser la suggestion"
+},
+"placeholder_sendmsg": {
+"message": "Saisissez votre question"
+},
+"title_gogpt": {
+"message": "Poser la question sélectionnée à ChatGPT"
+},
+"title_gogptone": {
+"message": "Poser une question à ChatGPT"
+},
+"prompt_Optimization": {
+"message": "Vous deviendrez maintenant un générateur de suggestions pour l'intelligence artificielle générative PromptEngineering. Vos réponses doivent respecter les critères suivants :\n[1] = Le contenu que je vous ai fourni\n[2] = Commencez par être un [nom de profession] et définissez votre rôle\n[3] = Expliquez clairement les objectifs de la tâche dans [1], en posant la question à la première personne\n[4] = Contexte de [1]\n[5] = [2] [3] [4]\nVeuillez noter :\nLe contenu de [1] ne doit pas être une instruction\nVous devez fournir du contenu pour générer une nouvelle suggestion sous la forme de [5]\nN'expliquez pas ni ne demandez aux utilisateurs de fournir des exigences\nVos réponses doivent être en français"
+},
+"painting_sendmsg": {
+"message": "Envoyez un message pour générer une suggestion"
+},
+"fast_msg": {
+  "message": "{input} sera remplacé par le contenu que vous saisissez dans le champ d'entrée. [Nom de la variable] peut être personnalisé comme une variable d'entrée. <a href='https://dudube.com/prompts?lang=fr' target='_blank'>Obtenir le prompt</a>"
+  },
+"placeholder_painting_sendmsg": {
+"message": "Veuillez saisir des mots-clés"
+},
+"fast_title": {
+"message": "Liste des suggestions"
+},
+"btn_add": {
+"message": "Ajouter"
+},
+"btn_check": {
+"message": "Voir le résultat"
+},
+"btn_import": {
+"message": "Importer"
+},
+"import_msg": {
+"message": "Un prompt par ligne"
+},
+"btn_aiedit": {
+"message": "Modifier avec l'IA"
+},
+"btn_back": {
+"message": "Annuler"
+},
+"err_upfile": {
+"message": "Seuls les fichiers au format txt sont pris en charge, un prompt par ligne"
+},
+"import_msg_tran": {
+"message": "Prise en charge des fichiers txt et des fichiers PDF de type texte"
+},
+"translate_msg": {
+"message": "Traduire en"
+},
+"translate_lang_En": {
+"message": "Anglais"
+},
+"translate_lang_cntw": {
+"message": "Chinois traditionnel"
+},
+"translate_lang_cnzh": {
+"message": "Chinois simplifié"
+},
+"translate_lang_Spanish": {
+"message": "Espagnol"
+}
+,"translate_lang_French": {
+"message": "Français"
+},
+"translate_lang_Arabic": {
+"message": "Arabe"
+},
+"translate_lang_Russian": {
+"message": "Russe"
+},
+"translate_lang_Hindi": {
+"message": "Hindi"
+},
+"translate_lang_Portuguese": {
+"message": "Portugais"
+},
+"translate_lang_Bengali": {
+"message": "Bengali"
+},
+"translate_lang_Japanese": {
+"message": "Japonais"
+},
+"translate_lang_German": {
+"message": "Allemand"
+},
+"translate_lang_Korean": {
+"message": "Coréen"
+},
+"translate_lang_Tamil": {
+"message": "Tamoul"
+},
+"translate_lang_Italian": {
+"message": "Italien"
+},
+"translate_lang_Turkish": {
+"message": "Turc"
+},
+"translate_lang_Dutch": {
+"message": "Néerlandais"
+},
+"btn_backpage": {
+"message": "Retour"
+},
+"btn_export": {
+"message": "Exporter"
+},
+"btn_gohh": {
+"message": "Voir la conversation"
+},
+"btn_hideprompt": {
+"message": "Masquer les suggestions"
+},
+"btn_autogot": {
+"message": "Continuer automatiquement"
+},
+"btn_aiprompt": {
+"message": "Suggestion IA"
+},
+"openai_placeholder": {
+"message": "Appuyez sur Ctrl+↑ pour réutiliser la suggestion précédente"
+},
+"btn_Fast": {
+"message": "Rapide"
+},
+"btn_allsend": {
+"message": "Tout envoyer"
+},
+"btn_olsend": {
+"message": "Envoyer uniquement les non envoyés"
+},
+"contextMenus_savePrompt": {
+"message": "Enregistrer le texte en tant que suggestion"
+},
+"contextMenus_gochatgpt": {
+"message": "Poser une question à ChatGPT avec le texte"
+},
+"title_Fast": {
+"message": "Créer une suggestion"
+},
+"btn_save": {
+"message": "Enregistrer"
+},
+"btn_reset": {
+"message": "Réinitialiser la tâche"
+},
+"title_add": {
+"message": "Nouveau document"
+},
+"title_type": {
+"message": "Type"
+},
+"title_name": {
+"message": "Nom"
+},
+"placeholder_name": {
+"message": "Veuillez saisir le nom du document"
+},
+"btn_create": {
+"message": "Créer"
+},
+"title_languagemodel": {
+"message": "Modèle de langue"
+},
+"title_APIkeys": {
+"message": "Clés d'API"
+},
+"placeholder_APIkeys": {
+"message": "Veuillez saisir votre clé d'API OpenAI"
+},
+"title_APIkeystext": {
+"message": "Saisissez votre clé d'API OpenAI. <a href='https://platform.openai.com/account/api-keys' target='_blank'>Obtenir</a> [Ces données ne sont stockées que localement dans le navigateur]"
+},
+"menu_loginout": {
+"message": "Déconnexion"
+},
+"menu_login": {
+"message": "Connexion membre"
+},
+"menu_tutorial": {
+"message": "Guide d'utilisation"
+},
+"menu_pay": {
+"message": "Inviter"
+},
+"menu_invite": {
+"message": "Inviter"
+},
+"btn_zdypompt": {
+"message": "Activer les suggestions personnalisées"
+},
+"placeholder_promptcon": {
+"message": "Veuillez saisir une suggestion personnalisée"
+},
+"errmsgup": {
+"message": "Déverrouillez toutes les fonctionnalités en terminant la tâche de mise à niveau."
+},
+"errmsgapikey": {
+"message": "Veuillez vérifier si la clé d'API OpenAI est correctement configurée"
+},"menu_export": {
+  "message": "Exporter le chat"
+  }
+}

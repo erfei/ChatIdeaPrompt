@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>ChatIdeaPrompt</title>
+    <meta http-equiv="Content-Type" content="span/html; charset=utf-8">
+    <link rel="stylesheet" href="../lib/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <!--  滚动条插件样式  -->
+    <link rel="stylesheet" href="../lib/overlayscrollbars/styles/overlayscrollbars.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-admin.css">
+    <link rel="stylesheet" href="../css/options.css">
+
+  </head>
+  <body data-scrollbar-auto-hide="leave" data-tab-page-enable-theme="true" data-scrollbar-auto-hide-delay="1300">
+    <!--头部导航-->
+   
+
+      <!--头部导航-->
+      <ul class="bsa-header">
+          <!-- 侧边栏触发按钮(移动端时显示) -->
+          <li class="bsa-sidebar-toggler" data-bsa-toggle="pushmenu">
+              <div class="bsa-header-item">
+                  <i class="bi bi-list"></i>
+              </div>
+          </li>
+        
+       
+      
+      </ul>
+      
+
+<!--侧边栏-->
+<div class="bsa-sidebar">
+  <!--  侧边栏头部部分(展示品牌logo)  -->
+  <div class="bsa-sidebar-header">
+      <div class="bsa-logo-wrapper">
+          <img src="../images/48.png" style="width:36px;height:36px;"  alt="logo-icon">
+      </div>
+      <div class="bsa-logo-text ms-2 bsa-ellipsis-2">ChatIdeaPrompt</div>
+  </div>
+
+
+  <!--  侧边栏的身体部分(展示侧边栏菜单)  -->
+  <div class="bsa-sidebar-body" data-overlayscrollbars-initialize>
+
+      <ul class="bsa-menu" data-bsa-toggle="sidebar" data-accordion="true" data-animation-speed="150">
+        <li>
+       
+
+
+            <div class="row mb-3">
+              <label for="maxfile" class="col-sm-5 col-form-label text-sm-end" data-i18n='options_Languagelab' ></label>
+              <div class="col-sm-6" >
+                  <div class="input-group">
+               
+                    <select name="language"class="form-control" id="language">
+                      <option value="en">English</option>
+                      <option value="zh_CN">中文(简体)</option>
+                 <!--      <option value="zh_TW">中文(繁體)</option>
+                      <option value="es">Español</option>
+                      <option value="fr">Français</option>
+                      <option value="ar" >العربية</option>
+                      <option value="ru">Русский</option>
+                      <option value="hi">हिन्दी</option>
+                      <option value="pt">Português</option>
+                      <option value="bn">বাংলা</option>
+                      <option value="ja">日本語</option>
+                      <option value="de">Deutsch</option>
+                      <option value="ko">한국어</option>
+                      <option value="ta">தமிழ்</option>
+                      <option value="it">Italiano</option>
+                      <option value="tr">Türkçe</option>
+                      <option value="nl">Nederlands</option> -->
+                    </select>
+                    
+                  </div>
+                  
+              </div>
+          </div>
+        </li>
+        <li>
+       
+      
+    
+     
+        <li  class="frmenu"  data-id="911111116" data-pid="0">
+          <a  class="has-children"   id="pmneru911111116"  >
+            <span data-i18n='PromptFast'></span> 
+          </a>
+          <span class="addfolder" data-nextshow="2" data-id="911111116"  data-type="fast"><i class="bi bi-plus"></i></span>
+      </li>
+    
+     
+     
+  
+   
+      </ul>
+  </div>
+  <div class="fixed-bottom" >
+    <ul class="bsa-menu" >
+  <!--     <li >
+        <a  >
+            <i class="bi bi-box2-heart"></i> <span   data-i18n="menu_donate"></span>
+        </a>
+      </li> -->
+    <!--   <li class="upgrade">
+        <a  >
+            <i class="bi bi-share"></i> <span class="paybtn"  data-i18n="menu_invite"></span>
+        </a>
+      </li> -->
+<!--       <li>  <a  href="https://dudube.com/tutorial"  target="_blank">
+        <i class="bi bi-question-circle"></i> <span data-i18n="menu_tutorial"></span>
+        </a>
+      </li> -->
+  
+
+    <li>  <a  data-bs-toggle="modal" data-bs-target="#setingModal">
+  
+      <i class="bi bi-gear"></i> <span data-i18n='menu_seting'></span> 
+  </a>
+  </li>
+   
+
+  
+   </ul>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="title_add"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group row">
+          <label for="typeSelect" class="col-sm-2 col-form-label" data-i18n="title_type"></label>
+          <div class="col-sm-10">
+            <select class="form-control" id="typeSelect">
+              <!-- 添加选项，根据您的需求自定义 -->
+              <option value="autoprompt" data-show="1"  data-i18n="menu_task"></option>
+              <option value="translate" data-show="1" data-i18n="menu_translation"></option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="nameInput" class="col-sm-2 col-form-label" data-i18n="title_name"></label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="nameInput" data-i18n-placeholder="placeholder_name" placeholder="">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="craetemenu" data-i18n="btn_create"></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 设置 -->
+<div class="modal fade" id="setingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="menu_seting"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+  
+          <div class="form-group row">
+          <label for="ailist" class="col-sm-1 col-form-label">AI</label>
+          <div class="col-sm-10" id="checkbox-container">
+             
+
+          
+          </div>
+        </div>
+      </div>
+<!--     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="savesetting" data-i18n="btn_save"></button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+<!-- 保存快捷 -->
+<div class="modal fade" id="promptsave" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="max-width:650px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="title_Fast"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          
+          <select class="form-select" id="fastmenuSelect1">
+
+          </select>
+        </div>
+        <div class="mb-3">
+         
+          <textarea class="form-control" id="promptTextarea1" rows="10"></textarea>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="savefast" class="btn btn-primary" data-i18n="btn_save" ></button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!--内容区域(用于tab选项卡插件)-->
+<div class="bsa-content">
+  
+  <iframe id="iframere" name="iframere"  style="width: 100%; height: 100%;  border: none;" src="fast.html"></iframe>
+</div>
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/localization.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/datatabe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/options.js" type="text/javascript" charset="utf-8"></script>
+    
+  </body>
+</html>

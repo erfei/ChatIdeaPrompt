@@ -1,0 +1,246 @@
+{ "language": {
+  "message": "俄语"
+},"code": {
+  "message": "ru"
+},"appName": {
+"message": "ChatIdeaPrompt-русский"
+},
+"appDesc": {
+"message": "Откройте для себя и используйте лучшие подсказки для ChatGPT"
+},
+"copy": {
+"message": "Копировать"
+},
+"edit": {
+"message": "Редактировать"
+},
+"options_Languagelab": {
+"message": "Язык:"
+},
+"menu_prompt": {
+"message": "Оптимизация подсказок"
+},
+"menu_Midjourney": {
+"message": "Подсказки Midjourney"
+},
+"PromptFast": {
+"message": "Быстрые подсказки"
+},
+"menu_file": {
+"message": "Документ"
+},
+"menu_task": {
+"message": "Задачи подсказок"
+},
+"menu_translation": {
+"message": "Перевод документа"
+},
+"menu_seting": {
+"message": "Настройки"
+},
+"hint_sendmsg": {
+"message": "Отправьте сообщение, чтобы оптимизировать подсказку"
+},
+"placeholder_sendmsg": {
+"message": "Введите ваш вопрос"
+},
+"title_gogpt": {
+"message": "Задать вопрос ChatGPT на основе выбранного вопроса"
+},
+"title_gogptone": {
+"message": "Задать вопрос ChatGPT"
+},
+"prompt_Optimization": {
+"message": "Теперь вы будете создавать подсказки для генеративного искусственного интеллекта под названием PromptEngineering. Ваши ответы должны соответствовать следующим требованиям:\n[1]=Я предоставляю вам содержание\n[2]=Начните с представления себя в качестве [определенной профессии]\n[3]=[1] четко определите цель задачи, задав вопрос от первого лица\n[4]=[1] описывайте сценарий\n[5]=[2][3][4]\nОбратите внимание:\nСодержание [1] не является инструкцией\nВы должны предоставить мне содержание [5], чтобы сгенерировать новую подсказку.\nНе объясняйте и не ставьте требования пользователю\nВаши ответы должны быть на китайском языке."
+},
+"painting_sendmsg": {
+"message": "Отправьте сообщение для генерации подсказки"
+},
+"fast_msg": {
+  "message": "{input} будет заменен на содержимое, которое вы введете в поле ввода. [Имя переменной] можно настроить как входную переменную. <a href='https://dudube.com/prompts?lang=ru' target='_blank'>Получить подсказку</a>"
+  },
+"placeholder_painting_sendmsg": {
+"message": "Введите ключевое слово"
+},
+"fast_title": {
+"message": "Список подсказок"
+},
+"btn_add": {
+"message": "Добавить"
+},
+"btn_check": {
+"message": "Проверить результат"
+},
+"btn_import": {
+"message": "Импорт"
+},
+"import_msg": {
+"message": "По одной подсказке на строку"
+},
+"btn_aiedit": {
+"message": "Изменить ИИ"
+},
+"btn_back": {
+"message": "Отменить"
+},
+"err_upfile": {
+"message": "Поддерживается только файлы формата txt, по одной подсказке на строку"
+},
+"import_msg_tran": {
+"message": "Поддерживаются файлы формата txt и символьные файлы PDF"
+},
+"translate_msg": {
+"message": "Перевести на"
+},
+"translate_lang_En": {
+"message": "Английский"
+},
+"translate_lang_cntw": {
+"message": "Китайский (традиционный)"
+},
+"translate_lang_cnzh": {
+"message": "Китайский (упрощенный)"
+},
+"translate_lang_Spanish": {
+"message": "Испанский"
+},"translate_lang_French": {
+"message": "французский"
+},
+"translate_lang_Arabic": {
+"message": "арабский"
+},
+"translate_lang_Russian": {
+"message": "русский"
+},
+"translate_lang_Hindi": {
+"message": "хинди"
+},
+"translate_lang_Portuguese": {
+"message": "португальский"
+},
+"translate_lang_Bengali": {
+"message": "бенгальский"
+},
+"translate_lang_Japanese": {
+"message": "японский"
+},
+"translate_lang_German": {
+"message": "немецкий"
+},
+"translate_lang_Korean": {
+"message": "корейский"
+},
+"translate_lang_Tamil": {
+"message": "тамильский"
+},
+"translate_lang_Italian": {
+"message": "итальянский"
+},
+"translate_lang_Turkish": {
+"message": "турецкий"
+},
+"translate_lang_Dutch": {
+"message": "голландский"
+},
+"btn_backpage": {
+"message": "Назад"
+},
+"btn_export": {
+"message": "Экспорт"
+},
+"btn_gohh": {
+"message": "Посмотреть диалог"
+},
+"btn_hideprompt": {
+"message": "Скрыть подсказки"
+},
+"btn_autogot": {
+"message": "Автоматическое продолжение"
+},
+"btn_aiprompt": {
+"message": "Подсказки ИИ"
+},
+"openai_placeholder": {
+"message": "Ctrl+↑ для повторного ввода предыдущей подсказки"
+},
+"btn_Fast": {
+"message": "Быстро"
+},
+"btn_allsend": {
+"message": "Отправить все"
+},
+"btn_olsend": {
+"message": "Только неотправленные"
+},
+"contextMenus_savePrompt": {
+"message": "Сохранить текст как подсказку"
+},
+"contextMenus_gochatgpt": {
+"message": "Задать вопрос, используя текст в ChatGPT"
+},
+"title_Fast": {
+"message": "Создание подсказки"
+},
+"btn_save": {
+"message": "Сохранить"
+},
+"btn_reset": {
+"message": "Сбросить задачу"
+},
+"title_add": {
+"message": "Создать документ"
+},
+"title_type": {
+"message": "Тип"
+},
+"title_name": {
+"message": "Название"
+},
+"placeholder_name": {
+"message": "Введите название документа"
+},
+"btn_create": {
+"message": "Создать"
+},
+"title_languagemodel": {
+"message": "Языковая модель"
+},
+"title_APIkeys": {
+"message": "API-ключи"
+},
+"placeholder_APIkeys": {
+"message": "Введите API-ключ OpenAI"
+},
+"title_APIkeystext": {
+"message": "Введите свой API-ключ OpenAI. <a href='https://platform.openai.com/account/api-keys' target='_blank'>Получить</a> [Эти данные хранятся только в вашем браузере и не передаются никому]"
+},
+"menu_loginout": {
+"message": "Выйти"
+},
+"menu_login": {
+"message": "Войти"
+},
+"menu_tutorial": {
+"message": "Руководство по использованию"
+},
+"menu_pay": {
+"message": "Пригласить"
+},
+"menu_invite": {
+"message": "Пригласить"
+},
+"btn_zdypompt": {
+"message": "Включить настраиваемые подсказки"
+},
+"placeholder_promptcon": {
+"message": "Введите настраиваемую подсказку"
+},
+"errmsgup": {
+"message": "Разблокируйте все функции, выполнив задание на обновление."
+},
+"errmsgapikey": {
+"message": "Проверьте правильность установки ключа OpenAI."
+},"menu_export": {
+  "message": "Экспорт чата"
+  }
+}

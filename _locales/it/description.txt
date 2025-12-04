@@ -1,0 +1,22 @@
+
+Scoprire e utilizzare i migliori suggerimenti per ChatGPT
+Benvenuti nell'utilizzo di ChatIdeaPrompt, un'estensione gratuita del browser
+💻 Con le seguenti funzionalità:
+💡 Suggerimenti rapidi per ChatGPT
+💡 Ottimizzazione dei suggerimenti
+💡 Ctrl+↑ per reinserire l'ultima parola suggerita
+💡 Generazione di suggerimenti per un viaggio intermedio
+💡 Traduzione di documenti
+💡 Attività di domande automatiche per i suggerimenti
+💡 Clic automatico su Continua
+💡 Esportazione dei risultati delle attività di suggerimento in formato txt e pdf
+❓ Domande frequenti
+📌 Raccogliete la mia privacy?
+Oltre a conservare le informazioni di accesso al tuo account Google, tutti i tuoi altri dati sono archiviati localmente sul tuo dispositivo. L'eliminazione dell'estensione comporterà la perdita irreversibile dei dati poiché sono conservati solo nel dispositivo locale.
+📌 Ho trovato un bug!
+Ci dispiace sentire che hai riscontrato un bug. Se puoi contattarci tramite 💌 chatideaprompt@gmail.com, risolveremo il problema al più presto.
+📌 Ho un'idea per una funzionalità!
+Siamo sempre alla ricerca di modi per migliorare la nostra estensione e saremmo lieti di ascoltare le tue idee. Puoi condividere le tue idee tramite 💌 chatideaprompt@gmail.com.
+
+📪 Contattaci:
+Hai domande o suggerimenti? Per favore, contattaci tramite 💌 chatideaprompt@gmail.com.

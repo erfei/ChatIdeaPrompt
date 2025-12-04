@@ -1,0 +1,39 @@
+#selection-tooltip {
+  position: absolute;
+  background: #333;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  display: none;
+  cursor: default;
+  z-index: 9999;
+  padding: 6px;
+}
+.tooltip-item a.tooltip-btn{color:#fff;text-decoration:none;cursor:pointer;}
+.tooltip-trigger {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.tooltip-menu {
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid #444;
+}
+
+.tooltip-item {
+  padding: 6px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tooltip-item:hover {
+  background: #555;
+}
+
+#selection-tooltip.show-menu .tooltip-menu {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,21 @@
+Descobrindo e utilizando as melhores dicas do ChatGPT
+Bem-vindo(a) ao ChatIdeaPrompt, uma extensão gratuita para navegador
+💻 Com as seguintes funcionalidades:
+💡 Atalhos rápidos para prompts do ChatGPT
+💡 Otimização de prompts
+💡 Ctrl+↑ para reutilizar o prompt anterior
+💡 Geração de prompts no meio do caminho
+💡 Tradução de documentos
+💡 Automação de tarefas com prompts
+💡 Clique automático em "Continuar"
+💡 Exportação dos resultados das tarefas em formato txt ou pdf
+❓ Perguntas frequentes
+📌 Será que estão coletando minha privacidade?
+Exceto por salvar as informações de login da sua conta do Google, todos os seus outros dados são armazenados localmente no seu dispositivo. Se você desinstalar a extensão, os dados serão perdidos e não poderão ser recuperados, pois estão armazenados apenas na memória local do seu dispositivo.
+📌 Encontrei um bug!
+Lamentamos muito que você tenha encontrado um bug. Se você puder entrar em contato conosco pelo 💌 chatideaprompt@gmail.com, resolveremos o problema o mais rápido possível.
+📌 Tenho uma ideia de recurso!
+Estamos sempre em busca de melhorias para a nossa extensão e ficaríamos muito felizes em ouvir as suas ideias. Compartilhe suas ideias pelo 💌 chatideaprompt@gmail.com.
+
+📪 Contate-nos:
+Tem alguma pergunta ou sugestão? Entre em contato conosco pelo 💌 chatideaprompt@gmail.com.

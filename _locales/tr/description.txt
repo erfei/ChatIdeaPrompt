@@ -1,0 +1,21 @@
+ChatGPT'nin keşfi ve kullanımı için en iyi ipuçlarını keşfedin.
+ChatIdeaPrompt'u kullanmaktan memnuniyet duyuyoruz, bu ücretsiz bir tarayıcı eklentisidir.
+💻 Aşağıdaki özelliklere sahiptir:
+💡 ChatGPT hızlı ipuçları
+💡 İyileştirilmiş ipuçları
+💡 Ctrl+↑ ile önceki ipucunu yeniden girme
+💡 Midjourney ipucu oluşturma
+💡 Belge çevirisi
+💡 Otomatik ipucu sorma görevleri
+💡 Otomatik devam etme
+💡 İpuçları görev sonuçlarının txt, pdf formatında dışa aktarılmasını destekler
+❓ Sıkça Sorulan Sorular
+📌 Gizliliğimi topluyor musunuz?
+Google hesap giriş bilgilerinizi saklamak dışında, diğer tüm verileriniz cihazınızda yerel olarak depolanır. Genişletmeyi kaldırdıktan sonra veri kaybına neden olacağı için geri alınamaz çünkü sadece cihazınızın yerel depolama alanında saklanır.
+📌 Bir hata buldum!
+Bir hata bulduğunuz için üzgünüz. En kısa sürede sorunu çözebilmemiz için 💌 chatideaprompt@gmail.com aracılığıyla bizimle iletişime geçebilirsiniz.
+📌 Bir özellik fikrim var!
+Genişletme programımızı geliştirmek için sürekli olarak yeni fikirler arıyoruz. Düşüncelerinizi paylaşmak için 💌 chatideaprompt@gmail.com adresini kullanabilirsiniz.
+
+📪 Bizimle iletişime geçin:
+Herhangi bir sorunuz veya öneriniz mi var? Lütfen 💌 chatideaprompt@gmail.com adresinden bizimle iletişime geçin.

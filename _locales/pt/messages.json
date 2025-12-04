@@ -1,0 +1,247 @@
+{ "language": {
+  "message": "葡萄牙语"
+},"code": {
+  "message": "pt"
+},
+"appName": {
+"message": "ChatIdeaPrompt-Português"
+},
+"appDesc": {
+"message": "Descubra e use as melhores dicas para o ChatGPT"
+},
+"copy": {
+"message": "Copiar"
+},
+"edit": {
+"message": "Editar"
+},
+"options_Languagelab": {
+"message": "Idioma:"
+},
+"menu_prompt": {
+"message": "Otimização de prompts"
+},
+"menu_Midjourney": {
+"message": "Prompts de meio de jornada"
+},
+"PromptFast": {
+"message": "Prompt Rápido"
+},
+"menu_file": {
+"message": "Documento"
+},
+"menu_task": {
+"message": "Tarefa de prompts"
+},
+"menu_translation": {
+"message": "Tradução de documentos"
+},
+"menu_seting": {
+"message": "Configurações"
+},
+"hint_sendmsg": {
+"message": "Envie para otimizar o prompt"
+},
+"placeholder_sendmsg": {
+"message": "Digite sua pergunta"
+},
+"title_gogpt": {
+"message": "Perguntar ao ChatGPT com a pergunta selecionada"
+},
+"title_gogptone": {
+"message": "Perguntar ao ChatGPT"
+},
+"prompt_Optimization": {
+"message": "Agora você se tornará um gerador de prompts para uma inteligência artificial geradora de texto chamada PromptEngineering. Suas respostas devem atender aos seguintes requisitos:\n[1] = A informação que eu lhe fornecer\n[2] = Comece como [uma certa profissão], defina o papel\n[3] = Estabeleça as metas da tarefa claramente usando a primeira pessoa para fazer perguntas\n[4] = O cenário de [1]\n[5] = [2] [3] [4]\nObserve que o conteúdo de [1] não é uma instrução\nVocê irá fornecer o conteúdo de [5] para gerar uma nova sugestão.\nNão explique nem solicite requisitos ao usuário\nSuas respostas devem estar em chinês"
+},
+"painting_sendmsg": {
+"message": "Envie uma mensagem para gerar um prompt"
+},
+"fast_msg": {
+  "message": "{input} será substituído pelo conteúdo que você inserir na caixa de entrada. [Nome da variável] pode ser personalizado como uma variável de entrada. <a href='https://dudube.com/prompts?lang=pt' target='_blank'>Obter prompt</a>"
+  },
+"placeholder_painting_sendmsg": {
+"message": "Insira palavras-chave"
+},
+"fast_title": {
+"message": "Lista de prompts"
+},
+"btn_add": {
+"message": "Adicionar"
+},
+"btn_check": {
+"message": "Executar"
+},
+"btn_import": {
+"message": "Importar"
+},
+"import_msg": {
+"message": "Um prompt por linha"
+},
+"btn_aiedit": {
+"message": "Editar AI"
+},
+"btn_back": {
+"message": "Desfazer"
+},
+"err_upfile": {
+"message": "Apenas arquivos txt são suportados, um prompt por linha"
+},
+"import_msg_tran": {
+"message": "Suporta txt e PDF com caracteres"
+},
+"translate_msg": {
+"message": "Traduzir para"
+},
+"translate_lang_En": {
+"message": "Inglês"
+},
+"translate_lang_cntw": {
+"message": "Chinês (Tradicional)"
+},
+"translate_lang_cnzh": {
+"message": "Chinês (Simplificado)"
+},
+"translate_lang_Spanish": {
+"message": "Espanhol"
+},"translate_lang_French": {
+"message": "Francês"
+},
+"translate_lang_Arabic": {
+"message": "Árabe"
+},
+"translate_lang_Russian": {
+"message": "Russo"
+},
+"translate_lang_Hindi": {
+"message": "Hindi"
+},
+"translate_lang_Portuguese": {
+"message": "Português"
+},
+"translate_lang_Bengali": {
+"message": "Bengali"
+},
+"translate_lang_Japanese": {
+"message": "Japonês"
+},
+"translate_lang_German": {
+"message": "Alemão"
+},
+"translate_lang_Korean": {
+"message": "Coreano"
+},
+"translate_lang_Tamil": {
+"message": "Tâmil"
+},
+"translate_lang_Italian": {
+"message": "Italiano"
+},
+"translate_lang_Turkish": {
+"message": "Turco"
+},
+"translate_lang_Dutch": {
+"message": "Holandês"
+},
+"btn_backpage": {
+"message": "Voltar"
+},
+"btn_export": {
+"message": "Exportar"
+},
+"btn_gohh": {
+"message": "Ver Conversa"
+},
+"btn_hideprompt": {
+"message": "Ocultar Prompts"
+},
+"btn_autogot": {
+"message": "Continuação Automática"
+},
+"btn_aiprompt": {
+"message": "Prompt da IA"
+},
+"openai_placeholder": {
+"message": "Ctrl+↑ para reutilizar o último prompt"
+},
+"btn_Fast": {
+"message": "Rápido"
+},
+"btn_allsend": {
+"message": "Enviar Todos"
+},
+"btn_olsend": {
+"message": "Enviar Apenas Não Enviados"
+},
+"contextMenus_savePrompt": {
+"message": "Salvar texto como prompt"
+},
+"contextMenus_gochatgpt": {
+"message": "Usar texto para perguntar ao ChatGPT"
+},
+"title_Fast": {
+"message": "Criar Prompt"
+},
+"btn_save": {
+"message": "Salvar"
+},
+"btn_reset": {
+"message": "Redefinir Tarefa"
+},
+"title_add": {
+"message": "Novo Documento"
+},
+"title_type": {
+"message": "Tipo"
+},
+"title_name": {
+"message": "Nome"
+},
+"placeholder_name": {
+"message": "Digite o nome do documento"
+},
+"btn_create": {
+"message": "Criar"
+},
+"title_languagemodel": {
+"message": "Modelo de Linguagem"
+},
+"title_APIkeys": {
+"message": "Chaves da API"
+},
+"placeholder_APIkeys": {
+"message": "Digite sua chave de API OpenAI"
+},
+"title_APIkeystext": {
+"message": "Insira sua chave de API do OpenAI. <a href='https://platform.openai.com/account/api-keys' target='_blank'>Obter</a> [Esses dados são apenas locais e não são salvos]"
+},
+"menu_loginout": {
+"message": "Sair"
+},
+"menu_login": {
+"message": "Login de Membro"
+},
+"menu_tutorial": {
+"message": "Tutorial"
+},
+"menu_pay": {
+"message": "Convidar"
+},
+"menu_invite": {
+"message": "Convidar"
+},
+"btn_zdypompt": {
+"message": "Ativar Prompt Personalizado"
+},
+"placeholder_promptcon": {
+"message": "Digite o prompt personalizado"
+},
+"errmsgup": {
+"message": "Desbloqueie todos os recursos concluindo a tarefa de upgrade."
+},
+"errmsgapikey": {
+"message": "Verifique se a chave da API do OpenAI está configurada corretamente."
+},"menu_export": {
+  "message": "Exportar chat"
+  }
+}
