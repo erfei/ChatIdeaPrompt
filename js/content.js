@@ -51,55 +51,14 @@
                     </ul>
                     </div>
                 </div>
-                <div id="myset" class="myfast">
-                <div class="header">
-                  <select name="language" class="form-control" id="language">
-                      <option value="en">English</option>
-                      <option value="zh_CN">中文(简体)</option>
-                      <option value="zh_TW">中文(繁體)</option>
-                      <option value="es">Español</option>
-                      <option value="fr">Français</option>
-                      <option value="ar">العربية</option>
-                      <option value="ru">Русский</option>
-                      <option value="hi">हिन्दी</option>
-                      <option value="pt">Português</option>
-                      <option value="bn">বাংলা</option>
-                      <option value="ja">日本語</option>
-                      <option value="de">Deutsch</option>
-                      <option value="ko">한국어</option>
-                      <option value="ta">தமிழ்</option>
-                      <option value="it">Italiano</option>
-                      <option value="tr">Türkçe</option>
-                      <option value="nl">Nederlands</option>
-                    </select>
-                   
-   
-              
-                    <span class="close-set close">X</span>
-                    <div class="aibtn">
-                       <a class="stpcreate">添加</a>
-                    </div>
-                    </div>
-                    <div class="content">
-                    <ul id="stpromlist">
-                   </ul>
-                   
-                    </div>
-                </div>
             `;
             document.body.insertAdjacentHTML('beforeend', html);
             closefastbind();
             fastmenubind();
             selectfastbind();
-          
             showfastbind();
-           // openfastbind();
-            autogotobind();
-            subEventListener();
-            stpromptbind();//绑定前缀列表
-            stpromptadd();//添加前缀点击事件
+     
 
-       
     }
     let sennum=-1;
     let promptlist=[];
@@ -122,144 +81,10 @@
           });
     }
 let timergo=null;
-//绑定添加前缀提示
-const stpromptadd=function(){
-  //点击添加按钮
-  $('.stpcreate').onclick=function(){
-    var newElement = document.createElement('div');
-    newElement.innerHTML = `<div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="closebox closebtn" >&times;</span>
-      <div class="modal-header">
-        <h4>自定义提示</h4>
-        <p class="modal-ts">{{input}}将会被替换为您在输入框输入的内容,[[变量名称]]可自定义输入变量</p>
-      </div>
-    
-      <textarea id="userInput"  rows="10"></textarea>
-      <div class="modal-bottom">
-          <button class="btn-bot savestprompt"> 保存</button>
-        
-      </div>
-    
-    </div>
-  </div>
-    `;
-    document.body.appendChild(newElement);
-    //添加关闭按钮事件
-    $('.closebtn').onclick=function(){
-      $("#myModal").remove();
-    }
-    //点击保存事件
-    $('.savestprompt').onclick=function(){
-      savestprompt();
-    }
-  }
 
 
 
-}
-//保存前缀提示
-const savestprompt=function(){
-  var inputElement =  $('#userInput');
-  var inputstr= inputElement.value;
-  inputstr=inputstr.replace(/\/+$/, "");
-  if(inputstr==''){
-      return true;
-  }
-  //console.log(inputstr);
-  chrome.runtime.sendMessage({type: "stpromptsave",inputtxt:inputstr}, function(response) {
-    promptcontxt=inputstr;
-    chrome.storage.sync.set({ promptcon: inputstr }, function() {
-              
-    }); 
-      $("#myModal").remove();
-      stpromptbind();//重新绑定
-    
-  });
 
-}
-//绑定前缀
-const stpromptbind=function(){
-  chrome.runtime.sendMessage({type: "stpromptlist"}, function(response) {
-            
-    let inserhtml="";
-    response.data.forEach(item => {
-       
-        inserhtml+=`<li  title="单机选择"><span class="del-stpr" data-id="${item.id}" data-title="${item.title}">X</span><span class="stprompli" data-id="${item.id}">${item.title}</span> </li>`;
-       
-       
-    })
-    $('#stpromlist').innerHTML=inserhtml;
-    stpromptclick();
-});
-}
-//绑定前缀列表点击事件
-const stpromptclick=function(){
-  const liElements =$$('.stprompli');
-  liElements.forEach(li => {
-  li.addEventListener('click', () => {
-      inputbase(li.textContent)
-   
-        $('#myset').style.display="none";
-      
-      
-  });
-  });
-  const delElements =$$('.del-stpr');
-  delElements.forEach(li => {
-    li.addEventListener('click', () => {
-        var seid= li.getAttribute('data-id');
-        var title=li.getAttribute('data-title');
-        chrome.runtime.sendMessage({type: "stpromptdel",id:seid}, function(response) {
-          if(title==promptcontxt){
-            promptcontxt='';
-            chrome.storage.sync.set({ promptcon: "" }, function() {
-                      
-            }); 
-          }
-          stpromptbind();
-        
-      });
-        
-    });
-    });
-}
-const subEventListener=function(){
-  document.addEventListener('DOMContentLoaded', function() {
-    $('form.stretch ').addEventListener('submit', function(event) {
-      sennum=-1;
-      promptlist.length = 0;
-    
-     event.preventDefault(); 
-    
- 
-    });
-  });
-  
-}
-const autogotobind=function(){
-  
-  
-  chrome.storage.sync.get('language', function(items) {
-    $("#language").value =items.language;
-  });
-  chrome.storage.sync.get('promptcon', function(items) {
-    if(items.promptcon){
-     
-        promptcontxt=items.promptcon;
-    }
-  });
-   
- 
-  // 添加事件监听器
-  $("#language").addEventListener("change", function() {
-    let selectedLanguage = this.value;
-    chrome.storage.sync.set({ language: selectedLanguage }, function() {
-        window.location.reload(); // 刷新页面
-      });
-  });
-
-}
 
 
 
@@ -360,9 +185,7 @@ setInterval(check_url, 500);
             $('.close-btn').onclick=function(){
                 closefast();
             }
-            $('.close-set').onclick=function(){
-                $('#myset').style.display="none";
-            }
+
     }
     const closefast=function(){
         $('#myfast').style.display="none";

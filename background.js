@@ -45,7 +45,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
         .then(res => res.json())
         .then(data => {
             console.log("✅ background 提交成功", data);
-            sendResponse({ success: true, data });
+            // sendResponse({ success: true, data });
         })
      
 
@@ -107,7 +107,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
           }).then(res => {
             console.log("✅ 消息发送成功", res);
           }).catch(err => {
-            console.error("❌ 消息发送失败", err);
+            // console.error("❌ 消息发送失败", err);
           });
         }, 300);
       } else {
@@ -126,7 +126,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
                 }).then(res => {
                   console.log("✅ 消息发送成功", res);
                 }).catch(err => {
-                  console.error("❌ 消息发送失败", err);
+                  // console.error("❌ 消息发送失败", err);
                 });
               }, 1000); // 加载后稍微等一下更保险
             }
@@ -136,7 +136,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
       }
     });
 
-    sendResponse({ status: "ok" });
+    // sendResponse({ status: "ok" });
     return true;
     }
 
@@ -208,13 +208,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
          sendRequest({type: "askload"});
        });
     }
-    if(request.type=="midprompt"){
-      //获取Midjourney提示词列表
-      getDatmidlist().then(results=>{
-        sendRequest({type: "midprompt",data:results.data});
-      });
-    }
- 
+
     if(request.type=="savereply"){
         let ask='';
         let reply=''
@@ -256,11 +250,11 @@ chrome.runtime.onInstalled.addListener(function() {
       title: messages['contextMenus_savePrompt'].message,
       contexts: ["selection"],
   });
-  chrome.contextMenus.create({
-    id: "gochatgpt",
-    title: messages['contextMenus_gochatgpt'].message,
-    contexts: ["selection"],
-  });
+  // chrome.contextMenus.create({
+  //   id: "gochatgpt",
+  //   title: messages['contextMenus_gochatgpt'].message,
+  //   contexts: ["selection"],
+  // });
   }, 1000);
 
 });
@@ -287,53 +281,53 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
       setTimeout(() => chrome.runtime.sendMessage({type:'saveprompt',prompt:info.selectionText}), 800)
     });
   }
-  if (info.menuItemId === "gochatgpt") {
-    chrome.tabs.query({}, function(tabs) {
-      var targetUrl = 'https://chat.openai.com/';
-      // 遍历所有标签页
-      for (let tab of tabs) {
-        // 判断当前标签页是否是选项页
-         //  console.log(tab.url);
-          // 如果选项页已经打开，则切换到选项页
-          if (tab.url &&tab.url.startsWith(targetUrl)) {
-            // 如果选项页已经打开，则切换到选项页
-            chrome.tabs.update(tab.id, { active: true });
-           // console.log(info.selectionText);
-             setTimeout(function(){
-                chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {  
-                  chrome.tabs.sendMessage(tabs[0].id,{type:'insertselect',prompt:info.selectionText}, function(response) {  
+  // if (info.menuItemId === "gochatgpt") {
+  //   chrome.tabs.query({}, function(tabs) {
+  //     var targetUrl = 'https://chat.openai.com/';
+  //     // 遍历所有标签页
+  //     for (let tab of tabs) {
+  //       // 判断当前标签页是否是选项页
+  //        //  console.log(tab.url);
+  //         // 如果选项页已经打开，则切换到选项页
+  //         if (tab.url &&tab.url.startsWith(targetUrl)) {
+  //           // 如果选项页已经打开，则切换到选项页
+  //           chrome.tabs.update(tab.id, { active: true });
+  //          // console.log(info.selectionText);
+  //            setTimeout(function(){
+  //               chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {  
+  //                 chrome.tabs.sendMessage(tabs[0].id,{type:'insertselect',prompt:info.selectionText}, function(response) {  
                   
-                  });  
-              });
-             }, 300)
-            return;
-          }
+  //                 });  
+  //             });
+  //            }, 300)
+  //           return;
+  //         }
         
-      }
-      // 如果选项页没有打开，则创建新的标签页并打开选项页
+  //     }
+  //     // 如果选项页没有打开，则创建新的标签页并打开选项页
      
-      chrome.tabs.create({ url: targetUrl, active: true }, function(tab) {
-        // 监听标签页更新事件
-        chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-          // 检查更新的标签页是否为目标标签页
-          if (tabId === tab.id && changeInfo.status === "complete") {
-            // 页面加载完毕
+  //     chrome.tabs.create({ url: targetUrl, active: true }, function(tab) {
+  //       // 监听标签页更新事件
+  //       chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+  //         // 检查更新的标签页是否为目标标签页
+  //         if (tabId === tab.id && changeInfo.status === "complete") {
+  //           // 页面加载完毕
            
-            // 在这里执行你的操作
-            setTimeout(function(){
-              chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {  
-                chrome.tabs.sendMessage(tabs[0].id,{type:'insertselect',prompt:info.selectionText}, function(response) {  
+  //           // 在这里执行你的操作
+  //           setTimeout(function(){
+  //             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {  
+  //               chrome.tabs.sendMessage(tabs[0].id,{type:'insertselect',prompt:info.selectionText}, function(response) {  
                     
-                    });  
-                });
-            },3000);
+  //                   });  
+  //               });
+  //           },3000);
             
-          }
-        });
-      });
+  //         }
+  //       });
+  //     });
 
-    });
-  }
+  //   });
+  // }
 });
 // chrome.commands.onCommand.addListener(function(command) {
 //   if (command === "open_context_menu") {
