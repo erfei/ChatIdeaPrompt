@@ -67,8 +67,7 @@
     "tabs",
     "contextMenus",
     "storage",
-    "activeTab",
-      "clipboardWrite"
+    "activeTab"
    ],
     "host_permissions": [
     "https://wwww.dudube.com/*"
