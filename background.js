@@ -336,7 +336,10 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
 });
 //扩展安装完成事件
 chrome.runtime.onInstalled.addListener(function() {
- // chrome.runtime.openOptionsPage();
+
+  chrome.tabs.create({
+            url: chrome.runtime.getURL("/html/options.html?install=1")
+        });
   setTimeout(() => {
     chrome.contextMenus.create({
       id: "savePrompt",

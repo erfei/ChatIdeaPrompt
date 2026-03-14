@@ -3,15 +3,18 @@ let userPermissions ={'canPerAction':false};
 let options=[];
 (function(){
     const init=function(){
-    	loadAIOptions();
-        
+        loadAIOptions();
         createmenu();
+        //首次安装弹出设置选项卡
+        const params = new URLSearchParams(location.search);
+        if(params.get("install") === "1") {
+            const modalElement = document.getElementById("setingModal");
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+        }
     }
-let options = [
- 
-];
+let options = [];
 async function loadAIOptions() {
-
   try {
 
     const res = await fetch("https://www.dudube.com/chatideaprompt/ai-options.json");
@@ -347,6 +350,7 @@ $(document).on("click",".chdel",function(){
         }
         
     });
+
     init();
 })();
 
