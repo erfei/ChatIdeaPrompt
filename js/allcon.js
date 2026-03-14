@@ -5,16 +5,7 @@
     let globalSavelink = '';
     let globalCode = '';
     let globalInvid = '';
-const OPTIONS = [
-    { id: "Gemini", name: "Gemini", icon: "🔍" },
-    { id: "DouBao", name: "DouBao", icon: "🔍" },
-    { id: "ChatGPT", name: "ChatGPT", icon: "🔍" },
-    { id: "Claude", name: "Claude", icon: "🔍" },
-    { id: "Grok", name: "Grok", icon: "🔍" },
-    { id: "Copilot", name: "Copilot", icon: "🔍" },
-    { id: "QianWen", name: "QianWen", icon: "🔍" },
-    { id: "DeepSeek", name: "DeepSeek", icon: "🔍" },
-  ];
+    let OPTIONS = [];       
     // 创建气泡主容器
 const tooltip = document.createElement('div');
 tooltip.id = 'selection-tooltip';
@@ -64,10 +55,44 @@ const tooltipMenu = tooltip.querySelector(".tooltip-menu");
       });
     });
   }
-loadUserOptions().then(list => {
-    renderMenu(list);
-  });
+async function initMenu() {
+
+  // 先加载远程 OPTIONS
+  await loadRemoteOptions();
+
+  // 再加载用户设置
+  const list = await loadUserOptions();
+
+  renderMenu(list);
+}
+
+initMenu();
+
 let hideTimeout = null;
+//获取配置
+function loadRemoteOptions() {
+
+  return new Promise(resolve => {
+
+    chrome.runtime.sendMessage(
+      { type: "getOptions" },
+      function(response) {
+
+        if (response && response.type=="getoption") {
+          OPTIONS = response.data;
+        } else {
+          console.error("获取远程配置失败");
+        }
+
+        resolve();
+      }
+    );
+
+  });
+
+}
+
+
 
 // 显示提示气泡
 function showTooltip() {

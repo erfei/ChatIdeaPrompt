@@ -1,0 +1,15 @@
+[
+  { "id": "Gemini", "name": "Gemini", "icon": "🔍","url": "https://gemini.google.com/app" },
+  { "id": "DouBao", "name": "DouBao", "icon": "🔍" ,"url": "https://www.doubao.com/chat/"},
+  { "id": "ChatGPT", "name": "ChatGPT", "icon": "🔍" ,"url": "https://chatgpt.com/"},
+  { "id": "Claude", "name": "Claude", "icon": "🔍" ,"url":"https://claude.ai/"},
+  { "id": "Grok", "name": "Grok", "icon": "🔍","url":"https://grok.com/" },
+  { "id": "Copilot", "name": "Copilot", "icon": "🔍", "url":"https://copilot.microsoft.com/" },
+  { "id": "QianWen", "name": "QianWen", "icon": "🔍","url":"https://www.qianwen.com/"},
+  { "id": "DeepSeek", "name": "DeepSeek", "icon": "🔍","url": "https://chat.deepseek.com/" },
+  { "id": "YuanBao", "name": "YuanBao", "icon": "🔍","url": "https://yuanbao.tencent.com/" },
+  { "id": "NaMi", "name": "NaMi", "icon": "🔍","url": "https://www.n.cn/" },
+  { "id": "KiMi", "name": "KiMi", "icon": "🔍","url": "https://www.kimi.com/" },
+  { "id": "ZhiPu", "name": "ZhiPu", "icon": "🔍","url": "https://chatglm.cn/" },
+  { "id": "WenXin", "name": "WenXin", "icon": "🔍","url": "https://yiyan.baidu.com/" }
+]

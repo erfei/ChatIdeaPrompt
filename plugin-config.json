@@ -1,0 +1,67 @@
+[
+  {
+    "match": "https://chatgpt.com/",
+    "js": ["js/historygpt.js","js/insertmsg.js"],
+    "css": ["css/styles.css"]
+  },
+  {
+    "match": "https://www.doubao.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+  {
+    "match": "https://chat.deepseek.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+   {
+    "match": "https://gemini.google.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+  {
+    "match": "https://copilot.microsoft.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+   {
+    "match": "https://www.qianwen.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+   {
+    "match": "https://grok.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+    {
+    "match": "https://yuanbao.tencent.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+   {
+    "match": "https://www.n.cn/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+   {
+    "match": "https://chatglm.cn/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+   {
+    "match": "https://www.kimi.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+  {
+    "match": "https://yiyan.baidu.com/",
+    "js": ["js/function.js","js/content.js"],
+    "css": ["css/styles.css"]
+  },
+  {
+    "match": "https://claude.ai/",
+    "js": ["js/function_claude.js","js/content.js"],
+    "css": ["css/styles.css"]
+  }
+]

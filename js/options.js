@@ -1,20 +1,29 @@
 let langmessages = {};
 let userPermissions ={'canPerAction':false};
+let options=[];
 (function(){
     const init=function(){
-        loadset();
+    	loadAIOptions();
+        
         createmenu();
     }
-const options = [
-  { id: "Gemini", name: "Gemini" },
-  { id: "DouBao", name: "DouBao" },
-  { id: "ChatGPT", name: "ChatGPT" },
-  { id: "Claude", name: "Claude" },
-  { id: "Grok", name: "Grok" },
-  { id: "Copilot", name: "Copilot" },
-  { id: "QianWen", name: "QianWen" },
-  { id: "DeepSeek", name: "DeepSeek" },
+let options = [
+ 
 ];
+async function loadAIOptions() {
+
+  try {
+
+    const res = await fetch("https://www.dudube.com/chatideaprompt/ai-options.json");
+     options = await res.json();
+     loadset();
+  } catch (err) {
+
+
+  }
+
+}
+
 // console.log(userLang); // zh-CN | en-US
 // let message2 = chrome.i18n.getMessage("appName", {locale: "zh_TW"});
 //  console.log(message2);
@@ -252,6 +261,7 @@ $(document).on("click",".chdel",function(){
 
           chrome.storage.sync.get(["AIOptions"], (res) => {
              const saved = res.AIOptions;
+              //console.log(options);
               options.forEach(opt =>{
                  const div = document.createElement("div");
                   div.className = "checkbox";

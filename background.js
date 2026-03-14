@@ -4,7 +4,8 @@ try {
   
   // 如果导入失败，可以在这里进行错误处理
 }
-
+let OPTIONS=[];
+let CONFIG = [];
 (function(){
  var lg="";
 // 监听消息，当收到打开弹出窗口的消息时，打开一个弹出窗口
@@ -28,13 +29,103 @@ const loadlang=function(){
   })
 };
 loadlang();
+const CONFIG_URL = "https://www.dudube.com/chatideaprompt/plugin-config.json";//配置json
+const CACHE_TIME = 60 * 60 * 2;//缓存时间
+async function loadConfig() {
+  const now = Math.floor(Date.now() / 1000);
+  const cache = await chrome.storage.local.get([
+    "plugin_config",
+    "plugin_config_time"
+  ]);
+  // 如果缓存存在并且没过期
+  if (
+    cache.plugin_config &&
+    cache.plugin_config_time &&
+    now - cache.plugin_config_time < CACHE_TIME
+  ) {
+    CONFIG = cache.plugin_config;
+
+    console.log("使用缓存配置", CONFIG);
+
+    // 后台更新
+    updateRemoteConfig();
+
+    return;
+  }
+
+  // 没缓存或过期
+  await updateRemoteConfig();
+}
+
+loadConfig();
+//更新配置
+async function updateRemoteConfig() {
+
+  try {
+
+    const res = await fetch(CONFIG_URL);
+
+    const data = await res.json();
+
+    CONFIG = data;
+
+    await chrome.storage.local.set({
+      plugin_config: data,
+      plugin_config_time: Math.floor(Date.now() / 1000)
+    });
+
+    console.log("远程配置更新成功");
+
+  } catch (e) {
+
+    console.error("远程配置更新失败", e);
+
+  }
+
+}
+
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+
+  if (changeInfo.status !== "complete") return;
+  if (!tab.url) return;
+
+  injectScript(tabId, tab.url);
+
+});
+function injectScript(tabId, url) {
+
+  CONFIG.forEach(rule => {
+
+    if (url.startsWith(rule.match)) {
+
+      if (rule.css) {
+        chrome.scripting.insertCSS({
+          target: { tabId: tabId },
+          files: rule.css
+        });
+      }
+
+      if (rule.js) {
+        chrome.scripting.executeScript({
+          target: { tabId: tabId },
+          files: rule.js
+        });
+      }
+
+    }
+
+  });
+
+}
+const OPTIONS_URL = "https://www.dudube.com/chatideaprompt/ai-options.json";
+const OPTIONS_CACHE_TIME = 60 * 60 * 2; // 秒
 chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
 	
 
  //将内容保存到服务器
     if(request.type=="save-to-server"){
         const { savelink, code, invid,aireport } = request.payload;
-         console.log(request.payload);
+       //  console.log(request.payload);
         fetch(savelink, {
             method: "POST",
             headers: {
@@ -78,18 +169,10 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
         sendResponse({ status: "savepr-done" });
         return true;
       }
-      const urlMap = {
-    DouBao: "https://www.doubao.com/chat/",
-    DeepSeek: "https://chat.deepseek.com/",
-    ChatGPT: "https://chatgpt.com/",
-     Gemini: "https://gemini.google.com/app",
-     Copilot:"https://copilot.microsoft.com/",
-     Claude:"https://claude.ai/",
-     QianWen:"https://www.qianwen.com/",
-     Grok:"https://grok.com/"
-    };
-     // console.log(selecttext);
-     targetUrl = urlMap[action];
+    const item = OPTIONS.find(opt => opt.id === action);
+   // console.log(item);
+     targetUrl = item ? item.url : null;
+     //targetUrl = urlMap[action];
      if (!targetUrl) return;
      chrome.tabs.query({}, function (tabs) {
         const existingTab = tabs.find(tab => tab.url && tab.url.startsWith(targetUrl));
@@ -139,7 +222,17 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
     // sendResponse({ status: "ok" });
     return true;
     }
+    //获取配置
+  if (request.type === "getOptions") {
 
+    getOptionsWithCache().then(data => {
+
+      OPTIONS = data;
+      sendRequest({type: "getoption", data: data});
+
+    });
+    return true;
+  }
     if(request.type=='askmsg'){
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {  
         chrome.tabs.sendMessage(tabs[0].id,request, function(response) {  
@@ -374,6 +467,65 @@ function safeTabsSendMessage(tabId, message) {
     });
   });
 }
+async function getOptionsWithCache() {
+
+  const now = Math.floor(Date.now() / 1000);
+
+  const cache = await chrome.storage.local.get([
+    "ai_options",
+    "ai_options_time"
+  ]);
+
+  // 有缓存并且未过期
+  if (
+    cache.ai_options &&
+    cache.ai_options_time &&
+    now - cache.ai_options_time < OPTIONS_CACHE_TIME
+  ) {
+
+    console.log("使用AI缓存");
+
+    // 后台更新
+    updateOptionsRemote();
+
+    return cache.ai_options;
+
+  }
+
+  // 没缓存
+  return await updateOptionsRemote();
+
+}
+async function updateOptionsRemote() {
+
+  try {
+
+    const res = await fetch(OPTIONS_URL);
+
+    const data = await res.json();
+
+    await chrome.storage.local.set({
+      ai_options: data,
+      ai_options_time: Math.floor(Date.now() / 1000)
+    });
+
+    console.log("AI配置更新成功");
+
+    return data;
+
+  } catch (e) {
+
+    console.error("AI配置更新失败", e);
+
+    // 如果远程失败，返回旧缓存
+    const cache = await chrome.storage.local.get("ai_options");
+
+    return cache.ai_options || [];
+
+  }
+
+}
+
 })();
 
 

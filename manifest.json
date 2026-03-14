@@ -15,38 +15,8 @@
 
    "options_page": "html/options.html",
    "content_scripts": [
-      {
-         "js": [
-          "js/historygpt.js","js/insertmsg.js"
-        ],
-        "css": ["css/styles.css"],
-        "matches": [
-          "https://chatgpt.com/*"
-        ],
-        "run_at": "document_idle",
-        "all_frames": true
-      },{
-        "js": [
-          "js/function.js","js/content.js"
-        ],
-        "css": ["css/styles.css"],
-        "matches": [
-          "https://*.doubao.com/*","https://*.deepseek.com/*","https://gemini.google.com/*","https://copilot.microsoft.com/*","https://www.qianwen.com/*","https://grok.com/*"
-        ],
-        "run_at": "document_idle",
-        "all_frames": true
-      },
-      {
-        "js": [
-          "js/function_claude.js","js/content.js"
-        ],
-        "css": ["css/styles.css"],
-        "matches": [
-          "https://claude.ai/*"
-        ],
-        "run_at": "document_idle",
-        "all_frames": true
-      },
+
+   	
       {
         "js": [
           "js/allcon.js"
@@ -64,13 +34,14 @@
       "matches": ["https://*/*"]
     }],
    "permissions": [
+   "scripting",
     "tabs",
     "contextMenus",
     "storage",
     "activeTab"
    ],
     "host_permissions": [
-    "https://wwww.dudube.com/*"
+    "https://*/*"
   ],
     "homepage_url": "https://dudube.com",
    "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgVItJE5L8EFOSIvCRlLCEyejCZ2mWhG88rdi9JjjxRnfMuVSwA3rY4VL1+++u1dN7/10iwDsFycyJ6HuK2AF7Uny2Lxa5uaHu58W+h2P0dfvjLlpa7iy3ubRAGeaPgePjFvkuxWWrMRxxyAkJhpFLbYjxPUgFc7KOD/tU6MguY88MttgpkP1AJvgsgtYgnhPdRFFFO4PG747VgRP/XfdVEJbwNLpqx+spJF134ZSDcrTHicqm4ozxhFND0E5CFbyB17xXNjvt7BwMjZy1TU2NCU/cBs8HIaMvUFCINJkJqbndGgAfjdKxfFVsuNTT6WVqdmkG3AxrBzViofyvZwswIDAQAB"
