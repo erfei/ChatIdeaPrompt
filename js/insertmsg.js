@@ -1,4 +1,7 @@
 (function(){
+  if (window.__CHATIDEA_PROMPT_INJECTED__) return;
+  window.__CHATIDEA_PROMPT_INJECTED__ = true;
+
     let runtast=0;
     let zdypr=2;
     let promptcontxt='';
@@ -61,7 +64,7 @@
             selectfastbind();
           
             showfastbind();
-            openfastbind();
+            
        
             importbtn();
        
@@ -104,147 +107,6 @@
       
       
     }
-    const openfastbind=function(){
-        var inputElement =  $('#prompt-textarea');
-        inputElement.addEventListener('keyup', function(event) {
-            const value = inputElement.value; // 获取输入框当前的值
-            // console.log(event);
-            // if (event.key === '/') {
-            //    //这里需要显示快捷提示词框
-            //    openfast();
-            // }
-            // if(event.key==='ArrowUp'){
-           
-            // }
-            // if(event.key==='ArrowDown'){
-            //     //按了向下
-             
-               
-            // }
-            /////回车发送消息事件
-            if (event.key === 'Enter') {
-          
-                // sennum=-1;
-                // promptlist.length = 0;
-                // //执行自动继续代码
-                //  if(runtast===0){
-                  
-                //     chrome.storage.sync.get('autogo', function(items) {
-                       
-                //         if(items.autogo===1){
-                //                 startautogo();
-                //         }else{
-                //             clearInterval(timergo);
-                //             timergo=null;
-                //         }
-                //     });
-                //  }
-              }
-          });
-          
-          inputElement.addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-           
-            }
-            if (event.ctrlKey && event.key === 'ArrowUp') {
-                // 执行相应的操作或函数
-                     //按了向上键
-                     if(sennum==-1){
-                        //获取对话用户历史记录
-                        allConver().then(response=>{
-                            //console.log(response.dhlist);
-                            let nowmsg=response.dhlist;
-                            for(let value  of  Object.values(nowmsg)){
-                                if(value.message){
-                                    if(value.message.author.role=='user')
-                                    {
-                                      //提问
-                                      ask=value.message.content.parts[0];
-                                      promptlist.push(ask);
-                                    }
-                                  }
-                            }
-                            promptlist.reverse();
-                          //  console.log(promptlist);
-                              fistpromp=inputElement.innerHTML;
-                              sennum+=1;
-                             inputElement.innerHTML=promptlist[sennum];
-                             inputElement.focus()
-                             var range = document.createRange();
-                            // 创建 Selection 对象
-                            var selection = window.getSelection();
-
-                            // 将 range 设置为元素内容的最后位置
-                            range.selectNodeContents(inputElement);
-                            range.collapse(false); // collapse(false) 表示将光标置于内容的末尾
-
-                            // 清空 selection 对象中的任何选中范围，然后添加新的 range
-                            selection.removeAllRanges();
-                            selection.addRange(range);
-
-                            
-                         })
-                    }else{
-                        sennum+=1;
-                        if(sennum<promptlist.length){
-                            inputElement.innerHTML=promptlist[sennum];
-                            inputElement.focus()
-                            var range = document.createRange();
-                            // 创建 Selection 对象
-                            var selection = window.getSelection();
-
-                            // 将 range 设置为元素内容的最后位置
-                            range.selectNodeContents(inputElement);
-                            range.collapse(false); // collapse(false) 表示将光标置于内容的末尾
-
-                            // 清空 selection 对象中的任何选中范围，然后添加新的 range
-                            selection.removeAllRanges();
-                            selection.addRange(range);
-                        }
-                       
-                       
-                    }
-              }
-              if (event.ctrlKey && event.key === 'ArrowDown') {
-                // 执行相应的操作或函数
-                if(sennum>0){
-                    sennum-=1;
-                    inputElement.innerHTML=promptlist[sennum];
-                    inputElement.focus()
-                    var range = document.createRange();
-                    // 创建 Selection 对象
-                    var selection = window.getSelection();
-
-                    // 将 range 设置为元素内容的最后位置
-                    range.selectNodeContents(inputElement);
-                    range.collapse(false); // collapse(false) 表示将光标置于内容的末尾
-
-                    // 清空 selection 对象中的任何选中范围，然后添加新的 range
-                    selection.removeAllRanges();
-                    selection.addRange(range);
-                }else{
-                    inputElement.value=fistpromp;
-                    inputElement.focus()
-                    var range = document.createRange();
-                    // 创建 Selection 对象
-                    var selection = window.getSelection();
-
-                    // 将 range 设置为元素内容的最后位置
-                    range.selectNodeContents(inputElement);
-                    range.collapse(false); // collapse(false) 表示将光标置于内容的末尾
-
-                    // 清空 selection 对象中的任何选中范围，然后添加新的 range
-                    selection.removeAllRanges();
-                    selection.addRange(range);
-                }
-              }
-          });
-    }
-
-
-
-
-
 
 
 let current_url = window.location.href;
@@ -253,7 +115,7 @@ let current_url = window.location.href;
     if (current_url !== window.location.href) {
         current_url = window.location.href;
         if ($("#fastbtn")!==null) {
-            openfastbind();
+           
         }else{
             txtinput();
         }
@@ -335,6 +197,7 @@ setInterval(check_url, 500);
         });
 
     }
+
     const inputcon=function(mycontent){
             mycontent=convertNewlinesToParagraphs(mycontent);
 
@@ -410,14 +273,6 @@ setInterval(check_url, 500);
         txtinput();
     }
     
- 
-   
-
-
-
-      
-
- 
 
     const inputEvent = new Event('input', {
         bubbles: true,

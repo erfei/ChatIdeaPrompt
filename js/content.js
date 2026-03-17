@@ -1,5 +1,6 @@
 (function(){
- 
+    if (window.__CHATIDEA_PROMPT_INJECTED__) return;
+    window.__CHATIDEA_PROMPT_INJECTED__ = true;
     let promptcontxt='';
 
     //加载多语言配置
@@ -169,7 +170,7 @@ setInterval(check_url, 500);
         liElements.forEach(li => {
         li.addEventListener('click', () => {
   
-            inputbase(li.textContent)
+            inputbasekj(li.textContent)
             closefast();
         });
         });

@@ -157,7 +157,7 @@
     "message": "Ctrl+↑ can re-enter the last hint word"
   }
   ,"btn_Fast": {
-    "message": "fast"
+    "message": "Prompt"
   }
   ,"btn_allsend": {
     "message": "send all"

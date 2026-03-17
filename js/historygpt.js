@@ -1,4 +1,5 @@
-
+  if (window.__CHATIDEA_PROMPT_INJECTED__) return;
+  window.__CHATIDEA_PROMPT_INJECTED__ = true;
     let myAuth;
     async function Auth(){
         async function getAuth (){

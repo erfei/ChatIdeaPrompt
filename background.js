@@ -338,7 +338,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendRequest){
 chrome.runtime.onInstalled.addListener(function() {
 
   chrome.tabs.create({
-            url: chrome.runtime.getURL("/html/options.html?install=1")
+            url: chrome.runtime.getURL("/html/welcome.html")
         });
   setTimeout(() => {
     chrome.contextMenus.create({

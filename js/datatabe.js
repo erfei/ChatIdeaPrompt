@@ -412,9 +412,12 @@ function getDatpromptlist(typeid) {
       const transaction = db.transaction(['prompttask'], 'readwrite');
       const objectStore = transaction.objectStore('prompttask');
       const request = objectStore.get(id);
+
       request.onsuccess = function(event) {
           const data = event.target.result;
-          // 更新数据
+          //console.log(data)
+         //console.log(newData);
+          // 更新数据f
             if(newData.oldprompt){
               data.oldprompt = newData.oldprompt;
             }
@@ -428,6 +431,9 @@ function getDatpromptlist(typeid) {
             
             if(newData.reply){
               data.reply = newData.reply;
+            }
+             if(newData.typeid){
+              data.typeid = newData.typeid;
             }
           const updateRequest = objectStore.put(data);
           updateRequest.onsuccess = function(event) {

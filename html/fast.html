@@ -8,19 +8,42 @@
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/askidea.css">
 </head>
-<body>
-   
-      
-      
+<body> 
     <div class="container-fluid">
         <div class="row mt-3">
           
-        
+        <!-- 保存快捷 -->
+                <div class="modal fade" id="promptsave" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" style="max-width:650px;">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel" data-i18n="title_Fast"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                           <input type="hidden" id="id" name="id"  value="">
+                          <select class="form-select" id="fastmenuSelect1">
+
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                         
+                          <textarea class="form-control" id="promptTextarea1" rows="10"></textarea>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" id="savefast" class="btn btn-primary" data-i18n="btn_save" ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             <div class="col-12 row askcon">
                 <div class="container">
                     <h6 class="my-4"> <span data-i18n="fast_title"></span>  
                         <!-- <button  class="border-0 bg-transparent btntight">Public Prompt</button> -->
-                        <button id="addBtn" class="border-0 bg-transparent btntight"><i class="bi bi-plus"></i><span data-i18n="btn_add"></span></button>
+                        <button id="addBtn" data-bs-toggle="modal" data-bs-target="#promptsave" class="border-0 bg-transparent btntight"><i class="bi bi-plus"></i><span data-i18n="btn_add"></span></button>
                         
                         
                         

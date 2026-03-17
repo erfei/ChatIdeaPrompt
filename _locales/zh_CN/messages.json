@@ -27,7 +27,7 @@
       "message": "Midjourney提示"
     },
     "PromptFast": {
-      "message": "提示快捷"
+      "message": "提示词"
     },
     "menu_file": {
       "message": "文档"
@@ -165,19 +165,19 @@
       "message": "Ctrl+↑可重新输入上一次提示词"
     }
     ,"btn_Fast": {
-      "message": "快捷提示"
+      "message": "提示词"
     }
     ,"btn_allsend": {
       "message": "全部发送"
     } ,"btn_olsend": {
       "message": "仅未发送"
     } ,"contextMenus_savePrompt": {
-      "message": "将文本保存为提示"
+      "message": "保存提示词"
     },"contextMenus_gochatgpt": {
       "message": "使用文本去chatgpt提问"
     }
     ,"title_Fast": {
-      "message": "创建提示"
+      "message": "收藏提示词"
     } ,"btn_save": {
       "message": "保存"
     }
