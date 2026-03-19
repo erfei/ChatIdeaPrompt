@@ -1,14 +1,36 @@
-# ChatIdeaPrompt
+## ChatIdeaPrompt
 
-**ChatIdeaPrompt，一款支持多款AI快速提问和提示词管理的浏览器扩展程序，**
+### 发现和使用 AI最佳技巧
 
-### 💻 功能：
+欢迎使用**ChatIdeaPrompt**，利用强大的提示功能提升您的AI生产力
 
-💡 快速输入提示词
-💡 提示词管理
-💡 将选中内容快速发送给AI
-💡 支持Gemini，DouBao，ChatGPT，Grok，Copilot，QianWen，DeepSeek 将选中内容发送给AI快速提问
+#### 💻 具有以下功能：
 
-### 📪 联系我：
+💡提示词库: 创建并管理您的AI提示库；
+⚡快速插入:与人工智能聊天时，可立即插入提示语；
+🖱 选择 → 询问 AI:选择网页文本并立即发送给AI；
+🤖 多人工智能：支持Gemini，豆包，ChatGPT，Claude等；
 
-如有任何疑问或建议，请通过以下邮箱联系我：mieyunfei@gmail.com。
+##### ❓ 常见问题解答
+
+📌 是否收集
+
+###### 我的隐私?
+
+您其他所有的数据都存储在您的设备本地，如删除扩展后将导致数据丢失无法恢复，因为它仅存储在您的设备本地存储器中。
+📌 我发
+
+###### 现了一个 bug！
+
+很抱歉听到您遇到了一个 bug。如果您可以通过💌 chatideaprompt@gmail.com与我们联系，我们将尽快解决问题。
+📌我
+
+###### 有一个功能点子！
+
+我们一直在寻找改进我们的扩展程序的方法，非常乐意听取您的想法。可通过💌 chatideaprompt@gmail.com来分享您的想法。
+
+📪 联系我们：
+有任何问题或建议吗？请通过💌 chatideaprompt@gmail.com与我联系。
+### 使用教程
+![本地图片](images/demo.gif)
+
